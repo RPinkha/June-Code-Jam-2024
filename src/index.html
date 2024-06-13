@@ -15,6 +15,48 @@
     />
   </head>
   <body class="page">
-    <div class="page__content"></div>
+    <div class="page__content">
+      <header class="header"></header>
+      <main class="main"></main>
+      <footer class="footer">
+        <ul class="footer__contacts">
+          <li className="footer__contact">
+            <p className="footer__name">Ruven Pinkhasov</p>
+            <div className="footer__links">
+              <a
+                className="footer__link"
+                href="https://www.linkedin.com/in/ruven-pinkhasov/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="footer__icon"
+                  src="<%=require('./images/LinkedIn Original.svg')%>"
+                  alt="LinkedIn logo"
+                />
+              </a>
+              <a
+                className="footer__link"
+                href="https://github.com/RPinkha"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="footer__icon"
+                  src="<%=require('./images/Github Original.svg')%>"
+                  alt="GitHub logo"
+                />
+              </a>
+            </div>
+          </li>
+        </ul>
+        <p class="footer__copyright">
+          Copyright 2023 © -
+          <span class="footer__span-newline">
+            All Rights Reserved by ParkSparks
+          </span>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
