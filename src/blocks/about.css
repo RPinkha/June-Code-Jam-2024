@@ -1,0 +1,25 @@
+.about {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #355847;
+  height: 100vh;
+}
+.about__slogan {
+  position: relative;
+  top: 118px;
+  left: 172px;
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 64px;
+  color: #f5f5f7;
+  max-width: 416px;
+  width: 100%;
+}
+.about__description {
+  margin: 0px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #f5f5f7;
+}

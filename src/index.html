@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Park Sparks</title>
+    <link rel="tab icon" href="./images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <meta
@@ -16,9 +17,45 @@
   </head>
   <body class="page">
     <div class="page__content">
-      <header class="header"></header>
+      <header class="header">
+        <div class="header__container">
+          <img
+            class="header__logo"
+            src="<%=require('./images/ParkSparksLogo.png')%>"
+            alt="ParkSparksLogo"
+          />
+          <h1 class="header__title">ParkSparks</h1>
+        </div>
+
+        <nav class="nav">
+          <li class="nav__item">
+            <a href="#page-about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#page-route" class="nav__link">Route</a>
+          </li>
+          <li class="nav__item">
+            <a href="#page-tunes" class="nav__link">Tunes</a>
+          </li>
+          <li class="nav__item">
+            <a href="#page-suggestions" class="nav__link">Suggest</a>
+          </li>
+          <li class="nav__item">
+            <a href="#footer" class="nav__link">Contact</a>
+          </li>
+        </nav>
+      </header>
+      <div class="page__break"></div>
+      <section class="about" id="page-about">
+        <h2 class="about__slogan">Spark a New Adventure.</h2>
+        <p class="about__description">
+          Find the the perfect National Park route for the best roadtrip
+          experience!
+        </p>
+      </section>
+
       <main class="main"></main>
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <ul class="footer__contacts">
           <li class="footer__contact">
             <p class="footer__name">Andrew Huang</p>
@@ -138,7 +175,7 @@
           </li>
         </ul>
         <p class="footer__copyright">
-          Copyright 2023 © -
+          Copyright 2024 © -
           <span class="footer__span-newline">
             All Rights Reserved by ParkSparks
           </span>
