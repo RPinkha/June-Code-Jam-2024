@@ -41,7 +41,7 @@
 
 .nav__toggle {
   display: none;
-  background-color: #ffffff;
+  background-color: #eee0cb;
   padding: 0;
   border: none;
   border-radius: 10px;
@@ -50,7 +50,7 @@
   cursor: pointer;
   position: absolute;
   top: 18px;
-  right: 0px;
+  right: 2px;
 }
 
 .nav__toggle-line {
@@ -60,7 +60,7 @@
   border-radius: 1px;
   background-color: #000;
   position: absolute;
-  right: 8px;
+  right: 10px;
   pointer-events: none;
   z-index: 999;
   transition: 0.5s;
@@ -81,17 +81,6 @@
 
   .nav__links {
     display: none;
-    position: absolute;
-    height: 208px;
-    width: 100%;
-    top: 18px;
-    left: 0px;
-    border-radius: 10px;
-    background-color: #ffffff;
-    z-index: 999;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
   }
 
   .nav__links_open {
@@ -102,7 +91,7 @@
     display: none;
   }
 
-  .nav__links-close {
+  .nav__close-open {
     display: block;
   }
 
