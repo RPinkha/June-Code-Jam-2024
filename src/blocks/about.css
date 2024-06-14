@@ -9,6 +9,7 @@
   margin-top: 118px;
   z-index: 1;
 }
+
 .about__slogan {
   margin: 0px;
   padding: 0px;
@@ -17,6 +18,7 @@
   max-width: 416px;
   width: 100%;
 }
+
 .about__description {
   margin-top: 25px;
   padding: 0px;
