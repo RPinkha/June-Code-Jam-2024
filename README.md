@@ -8,12 +8,15 @@
 Park Sparks provides the optimal route to the most popular national parks, providing travlerers with the shortest and most efficient pathway for their summer adventure. Using advanced algorithms for geospatial analysis, data visualizations, and a user-friendly webpage, we ensure that you reach your destination quickly. Discover the most efficient and scenic route through America's natural treasures with Park Sparks!
 
 ## Design Structure
-[Project](URL)
+[Park Sparks](URL)
 
 [Figma](URL)
 [](URL)
 
 ## Key Technologies
+-
+-
+-
 
 ## Setup Instructions
 
@@ -26,8 +29,11 @@ Follow these steps to set up the project locally:
   npm install
   npm run dev
   ```
+Install requirments.txt to run .py and .ipynb files locally: 
 
-  
+  ```bash
+  pip install -r requirements.txt
+  ```
 
 
 
@@ -51,7 +57,7 @@ https://data.world/kevinnayar/us-national-parks
 - *latitude*: Latitude coordinate of the park
 - *area_km2*: Total area of the park in square kilometers
 
-The datasets were merged to conatin the above information for 63 national parks in the Unites States.The data underwent an initial preprocessing stage as part of an exploratory data analysis, during which they were carefully parsed and relabeled. Additionally, corrections were made to ensure consistency in type and format.
+The datasets were merged to conatin the above information for 63 national parks in the Unites States.The data underwent an initial preprocessing stage as part of an exploratory data analysis (EDA), during which they were carefully parsed, relabeled, and sorted. Additionally, corrections were made to ensure consistency in type and format.
 
 ## Top 9 National Parks:
 
@@ -73,7 +79,7 @@ See text descriptions [here](URL)
 
 
 ## Most-Visited Ordering Route Model:
-### ost-Visited Ordering Route Model Results:
+### Most-Visited Ordering Route Model Results:
 
 
 ## Optimzed Route Model:
@@ -87,7 +93,7 @@ See text descriptions [here](URL)
 
 ### Members:
 
-[Andrew - Data Scientist](URL)
+[Andrew Huang - Data Scientist](https://github.com/andytron)
 
 [Christian To - Software Engineer](https://github.com/ChristianSTo)
 
