@@ -7,7 +7,7 @@
       "latitude": 44.35,
       "area_km2": 198.6,
       "base_order": 5,
-      "optimized_order": 5
+      "optimized_order": 8
     },
     {
       "name": "Glacier",
@@ -16,7 +16,7 @@
       "latitude": 48.8,
       "area_km2": 4100.0,
       "base_order": 2,
-      "optimized_order": 8
+      "optimized_order": 9
     },
     {
       "name": "Grand Canyon",
@@ -25,7 +25,7 @@
       "latitude": 36.06,
       "area_km2": 4862.9,
       "base_order": 4,
-      "optimized_order": 6
+      "optimized_order": 5
     },
     {
       "name": "Grand Teton",
@@ -34,7 +34,7 @@
       "latitude": 43.73,
       "area_km2": 1254.7,
       "base_order": 7,
-      "optimized_order": 3
+      "optimized_order": 2
     },
     {
       "name": "Great Smoky Mountains",
@@ -43,7 +43,7 @@
       "latitude": 35.68,
       "area_km2": 2114.2,
       "base_order": 8,
-      "optimized_order": 2
+      "optimized_order": 7
     },
     {
       "name": "Rocky Mountain",
@@ -52,7 +52,7 @@
       "latitude": 40.4,
       "area_km2": 1075.7,
       "base_order": 3,
-      "optimized_order": 7
+      "optimized_order": 6
     },
     {
       "name": "Yellowstone",
@@ -70,7 +70,7 @@
       "latitude": 37.83,
       "area_km2": 3082.7,
       "base_order": 1,
-      "optimized_order": 9
+      "optimized_order": 3
     },
     {
       "name": "Zion",
