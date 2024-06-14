@@ -1,5 +1,5 @@
-June 2024 Code Jam - Park Sparks
-![Alt Text](URL)
+### June 2024 Code Jam - Park Sparks
+![Alt Text](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/parksparks.png)
 
 # Park Sparks : Optimal National Park Route
 
@@ -8,12 +8,48 @@ June 2024 Code Jam - Park Sparks
 Park Sparks provides the optimal route to the most popular national parks, providing travlerers with the shortest and most efficient pathway for their summer adventure. Using advanced algorithms for geospatial analysis, data visualizations, and a user-friendly webpage, we ensure that you reach your destination quickly. Discover the most efficient and scenic route through America's natural treasures with Park Sparks!
 
 ## Design Structure
-[Project](URL)
+[Park Sparks](URL)
 
 [Figma](URL)
 [](URL)
 
-Datasets used:
+## Key Technologies
+-
+-
+-
+
+## Setup Instructions
+
+Follow these steps to set up the project locally:
+
+**Clone the Repository**
+  ```bash
+  git clone https://github.com/RPinkha/June-Code-Jam-2024.git
+  cd June-Code-Jam-2024
+  npm install
+  npm run dev
+  ```
+Install requirments.txt to run .py and .ipynb files locally: 
+
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+### Export Data to JSON
+
+If the final parks dataset ever needs to be changed, run the cell in the .ipynb file in /notebooks:
+
+```
+top_9_parks.to_csv('final_9parks.csv', index=False)
+```
+
+This will write an updated final_9parks.csv file to /notebooks.
+
+Next, from the root folder, cd into cd src/scripts/ and run `python export_data_to_json.py` to write an updated JSON file to /data.
+
+This should update the existing JSON file in /data/parks_data.json. This JSON file is now ready to use as a JavaScript import, etc.
+
+### Datasets used:
 
 **nationparks.csv** - "The United States National Parks" - includes Name, Visitors, Date Established, Description and Area. 
 
@@ -23,7 +59,7 @@ https://www.kaggle.com/datasets/thedevastator/the-united-states-national-parks
 
 https://data.world/kevinnayar/us-national-parks
 
-**final_9parks.csv** - Final cleaned .csv for [download](URL) and use in the project.
+**final_9parks.csv** - Final cleaned .csv for [download](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/src/notebooks/final_9parks.csv) and use in the project.
 
 - *name*: Name of National Park
 - *visitors*: Number of annual visitors for 2021
@@ -33,22 +69,45 @@ https://data.world/kevinnayar/us-national-parks
 - *latitude*: Latitude coordinate of the park
 - *area_km2*: Total area of the park in square kilometers
 
-The dataset contains information on country abbreviation, latitude, and longitude for 245 countries around the world. The data were explored for missing values, duplicates, and incorrect values. Only one missing value was found, and it was dropped from the data. Data were otherwise in good condition and ready for analysis.
+The datasets were merged to conatin the above information for 63 national parks in the Unites States.The data underwent an initial preprocessing stage as part of an exploratory data analysis (EDA), during which they were carefully parsed, relabeled, and sorted. Additionally, corrections were made to ensure consistency in type and format.
+
+Using the data, we found the 9 top most vistied parks, and from there plan out a route that is ordered by most-visited, or ideally, the Optimal Route.
+
+## Top 9 National Parks:
+
+|  # | Name                  | Visitors  | Date Established | Longitude | Latitude | Area km² |
+|----|-----------------------|-----------|------------------|-----------|----------|----------|
+|  0 | Great Smoky Mountains | 14161548  | 1934-06-15       | -83.53    | 35.68    | 2114.2   |
+|  1 | Zion                  | 5039835   | 1919-11-19       | -113.05   | 37.30    | 595.9    |
+|  2 | Yellowstone           | 4860242   | 1872-03-01       | -110.50   | 44.60    | 8983.2   |
+|  3 | Grand Canyon          | 4532677   | 1919-02-26       | -112.14   | 36.06    | 4862.9   |
+|  4 | Rocky Mountain        | 4434848   | 1915-01-26       | -105.58   | 40.40    | 1075.7   |
+|  5 | Acadia                | 4069098   | 1919-02-26       | -68.21    | 44.35    | 198.6    |
+|  6 | Grand Teton           | 3885230   | 1929-02-26       | -110.80   | 43.73    | 1254.7   |
+|  7 | Yosemite              | 3287595   | 1890-10-01       | -119.50   | 37.83    | 3082.7   |
+|  8 | Glacier               | 3081656   | 1910-05-11       | -114.00   | 48.80    | 4100.0   |
+
+See text descriptions [here](URL)
+
+## Route Optimization Strategy
 
 
-## Most Popular First Route Model
+## Most-Visited Ordering Route Model:
+### Most-Visited Ordering Route Model Results:
 
 
-## Optimzed Route Model
+## Optimzed Route Model:
+
+### Optimized Route Results:
 
 
-
+## Conclusion
 
 
 
 ### Members:
 
-[Andrew - Data Scientist](URL)
+[Andrew Huang - Data Scientist](https://github.com/andytron)
 
 [Christian To - Software Engineer](https://github.com/ChristianSTo)
 
