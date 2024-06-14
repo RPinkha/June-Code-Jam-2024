@@ -26,9 +26,9 @@
 .nav__link {
   color: #f5f5f7;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 15px;
   margin: 0px;
-  padding: 25px;
+  padding: 20px;
   background-color: #355847;
   height: 100%;
   border: none;
@@ -50,7 +50,7 @@
   cursor: pointer;
   position: absolute;
   top: 18px;
-  right: 2px;
+  right: 12px;
 }
 
 .nav__toggle-line {
@@ -60,7 +60,7 @@
   border-radius: 1px;
   background-color: #000;
   position: absolute;
-  right: 10px;
+  right: 20px;
   pointer-events: none;
   z-index: 999;
   transition: 0.5s;
@@ -74,6 +74,12 @@
   top: 44px;
 }
 
+@media (max-width: 800px) {
+  .nav__link {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 700px) {
   .nav__toggle {
     display: block;
@@ -81,14 +87,25 @@
 
   .nav__links {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    right: 2px;
+    background-color: #88b29e;
+    height: auto;
+    gap: 10px;
+    border: 1px solid #fff;
+    padding: 60px 10px 10px;
+    border-radius: 10px;
   }
 
   .nav__links_open {
     display: flex;
   }
 
-  .nav__links_closed {
-    display: none;
+  .nav__link {
+    padding: 0;
+    background-color: #88b29e;
   }
 
   .nav__close-open {
