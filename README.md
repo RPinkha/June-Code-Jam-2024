@@ -16,11 +16,16 @@ Park Sparks provides the optimal route to the most popular national parks, provi
 ## Key Technologies
 
 ## Setup Instructions
+
 Follow these steps to set up the project locally:
 
 **Clone the Repository**
    ```bash
    git clone https://github.com/RPinkha/June-Code-Jam-2024.git
+   cd June-Code-Jam-2024
+   npm install
+   npm run dev
+
   
 
 
