@@ -5,6 +5,7 @@
   background-color: #355847;
   height: 100vh;
 }
+
 .about__slogan {
   position: relative;
   top: 118px;
@@ -17,6 +18,7 @@
   max-width: 416px;
   width: 100%;
 }
+
 .about__description {
   margin: 0px;
   padding: 10px 20px;
