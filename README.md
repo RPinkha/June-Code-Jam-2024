@@ -89,17 +89,42 @@ Using the data, we found the 9 top most vistied parks, and from there plan out a
 
 See text descriptions [here](URL)
 
+![Date Established](June-Code-Jam-2024/notebook/date_est.png)
+
+/graphs/
+Directory actions
+Add file
+More options
+
 ## Route Optimization Strategy
 
 
 ## Most-Visited Ordering Route Model:
 ### Most-Visited Ordering Route Model Results:
 
+Great Smoky Mountains to Zion: 2006.39 miles
+Zion to Yellowstone: 669.13 miles
+Yellowstone to Grand Canyon: 888.91 miles
+Grand Canyon to Rocky Mountain: 733.79 miles
+Rocky Mountain to Acadia: 2282.76 miles
+Acadia to Grand Teton: 2604.23 miles
+Grand Teton to Yosemite: 869.78 miles
+Yosemite to Glacier: 1066.51 miles
+**Total Distance: 11121.51 miles**
 
 ## Optimzed Route Model:
 
 ### Optimized Route Results:
 
+Great Smoky Mountains to Acadia: 1005.25 miles
+Acadia to Glacier: 2163.04 miles
+Glacier to Yellowstone: 334.15 miles
+Yellowstone to Grand Teton: 61.92 miles
+Grand Teton to Yosemite: 610.41 miles
+Yosemite to Zion: 355.07 miles
+Zion to Grand Canyon: 99.41 miles
+Grand Canyon to Rocky Mountain: 465.25 miles
+**Total Distance: 5094.52 miles**
 
 ## Conclusion
 
