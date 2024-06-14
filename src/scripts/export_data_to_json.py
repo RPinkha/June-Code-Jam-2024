@@ -34,7 +34,7 @@ distance_matrix = calculate_haversine_matrix(locations)
 def solve_tsp_or_tools(distance_matrix):
     num_locations = len(distance_matrix)
 
-    # Create routing index manager
+    # Create the routing index manager
     manager = pywrapcp.RoutingIndexManager(num_locations, 1, 0)
 
     # Create Routing Model
@@ -47,48 +47,35 @@ def solve_tsp_or_tools(distance_matrix):
 
     transit_callback_index = routing.RegisterTransitCallback(distance_callback)
 
-    # Allow to end at any node
+    # Define cost of each arc
+    routing.SetArcCostEvaluatorOfAllVehicles(transit_callback_index)
+
     for node in range(1, num_locations):
         routing.AddVariableMinimizedByFinalizer(routing.NextVar(manager.NodeToIndex(node)))
 
-    # Set parameters for the solver
+    # Setting first solution heuristic
     search_parameters = pywrapcp.DefaultRoutingSearchParameters()
-    search_parameters.first_solution_strategy = routing_enums_pb2.FirstSolutionStrategy.PATH_CHEAPEST_ARC
+    search_parameters.first_solution_strategy = (routing_enums_pb2.FirstSolutionStrategy.PATH_CHEAPEST_ARC)
+    search_parameters.local_search_metaheuristic = routing_enums_pb2.LocalSearchMetaheuristic.GUIDED_LOCAL_SEARCH
+    search_parameters.time_limit.seconds = 30  # Add a time limit for the search
 
+    # Solve the problem
     solution = routing.SolveWithParameters(search_parameters)
 
     # Get the route
     route = []
-    index = routing.Start(0)
-    while not routing.IsEnd(index):
-        route.append(manager.IndexToNode(index))
-        index = solution.Value(routing.NextVar(index))
+    if solution:
+        index = routing.Start(0)
+        while not routing.IsEnd(index):
+            route.append(manager.IndexToNode(index))
+            index = solution.Value(routing.NextVar(index))
 
     return route
 
-route = solve_tsp_or_tools(distance_matrix)
+optimal_route = solve_tsp_or_tools(distance_matrix)
 
-# Ensure route indices are valid
-if route is not None and all(idx < len(top_9_parks) for idx in route):
-    # Reorder parks based on the optimal route
-    optimal_parks = top_9_parks.iloc[route]
-
-    # Print distances between each leg of the route
-    total_distance = 0
-    for i in range(len(optimal_parks) - 1):
-        start_park = optimal_parks.iloc[i]
-        end_park = optimal_parks.iloc[i + 1]
-        distance = distance_matrix[route[i]][route[i + 1]]
-        total_distance += distance
-
-    # Function to calculate route for plotting
-    def calculate_route_for_plotting(lat1, lon1, lat2, lon2):
-        url = f"http://router.project-osrm.org/route/v1/driving/{lon1},{lat1};{lon2},{lat2}?overview=full&geometries=geojson"
-        response = requests.get(url)
-        data = response.json()
-        route = data['routes'][0]['geometry']['coordinates']
-        distance = data['routes'][0]['distance'] / 1000 * 0.621371  # Convert meters to miles
-        return route, distance
+if optimal_route and all(idx < len(top_9_parks) for idx in optimal_route):
+    optimal_parks = top_9_parks.iloc[optimal_route]
 
 # Prepare parks list
 parks_data = {
