@@ -8,12 +8,15 @@
 Park Sparks provides the optimal route to the most popular national parks, providing travlerers with the shortest and most efficient pathway for their summer adventure. Using advanced algorithms for geospatial analysis, data visualizations, and a user-friendly webpage, we ensure that you reach your destination quickly. Discover the most efficient and scenic route through America's natural treasures with Park Sparks!
 
 ## Design Structure
-[Project](URL)
+[Park Sparks](URL)
 
 [Figma](URL)
 [](URL)
 
 ## Key Technologies
+-
+-
+-
 
 ## Setup Instructions
 
@@ -25,6 +28,11 @@ Follow these steps to set up the project locally:
   cd June-Code-Jam-2024
   npm install
   npm run dev
+  ```
+Install requirments.txt to run .py and .ipynb files locally: 
+
+  ```bash
+  pip install -r requirements.txt
   ```
 
 ### Export Data to JSON
@@ -40,8 +48,6 @@ This will write an updated final_9parks.csv file to /notebooks.
 Next, from the root folder, cd into cd src/scripts/ and run `python export_data_to_json.py` to write an updated JSON file to /data.
 
 This should update the existing JSON file in /data/parks_data.json. This JSON file is now ready to use as a JavaScript import, etc.
-
-
 
 ### Datasets used:
 
@@ -63,7 +69,9 @@ https://data.world/kevinnayar/us-national-parks
 - *latitude*: Latitude coordinate of the park
 - *area_km2*: Total area of the park in square kilometers
 
-The datasets were merged to conatin the above information for 63 national parks in the Unites States.The data underwent an initial preprocessing stage as part of an exploratory data analysis, during which they were carefully parsed and relabeled. Additionally, corrections were made to ensure consistency in type and format.
+The datasets were merged to conatin the above information for 63 national parks in the Unites States.The data underwent an initial preprocessing stage as part of an exploratory data analysis (EDA), during which they were carefully parsed, relabeled, and sorted. Additionally, corrections were made to ensure consistency in type and format.
+
+Using the data, we found the 9 top most vistied parks, and from there plan out a route that is ordered by most-visited, or ideally, the Optimal Route.
 
 ## Top 9 National Parks:
 
@@ -85,7 +93,7 @@ See text descriptions [here](URL)
 
 
 ## Most-Visited Ordering Route Model:
-### ost-Visited Ordering Route Model Results:
+### Most-Visited Ordering Route Model Results:
 
 
 ## Optimzed Route Model:
