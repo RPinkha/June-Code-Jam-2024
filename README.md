@@ -14,11 +14,14 @@ Park Sparks provides the optimal route to the most popular national parks, provi
 
 Datasets used:
 
-**nationparks.csv** - "The United States National Parks" - includes Name, Visitors, Date Established, Description and Area. https://www.kaggle.com/datasets/thedevastator/the-united-states-national-parks 
+**nationparks.csv** - "The United States National Parks" - includes Name, Visitors, Date Established, Description and Area. 
+https://www.kaggle.com/datasets/thedevastator/the-united-states-national-parks 
 
-**us-national-parks.json** - "us-national-parks" - includes Longitutde, Latitude, park info and descripton. https://data.world/kevinnayar/us-national-parks
+**us-national-parks.json** - "us-national-parks" - includes Longitutde, Latitude, park info and descripton. 
+https://data.world/kevinnayar/us-national-parks
 
 **final_9parks.csv** - Final cleaned .csv for [download](URL) and use in the project.
+
 - *name*: Name of National Park
 - *visitors*: Number of annual visitors for 2021
 - *description*: Provided description of the park
@@ -26,7 +29,7 @@ Datasets used:
 - *longitude*: Longitude coordinate of the park
 - *latitude*: Latitude coordinate of the park
 - *area_km2*: Total area of the park in square kilometers
-- 
+
 
 
 
@@ -40,6 +43,9 @@ Datasets used:
 ### Members:
 
 [Andrew - Data Scientist](URL)
-[Christian - Software Engineer](URL)
-[Ruven - Software Engineer](URL)
-[Zoey Espinoza - Data Scientist](URL)
+
+[Christian To - Software Engineer](https://github.com/ChristianSTo)
+
+[Ruven Pinkhasov - Software Engineer](https://github.com/RPinkha)
+
+[Zoey Espinoza - Data Scientist](https://github.com/zoeyespinoza)
