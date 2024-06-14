@@ -13,7 +13,19 @@ Park Sparks provides the optimal route to the most popular national parks, provi
 [Figma](URL)
 [](URL)
 
-Datasets used:
+## Key Technologies
+
+## Setup Instructions
+Follow these steps to set up the project locally:
+
+**Clone the Repository**
+   ```bash
+   git clone https://github.com/RPinkha/June-Code-Jam-2024.git
+  
+
+
+
+### Datasets used:
 
 **nationparks.csv** - "The United States National Parks" - includes Name, Visitors, Date Established, Description and Area. 
 
@@ -49,17 +61,21 @@ The datasets were merged to conatin the above information for 63 national parks 
 |  7 | Yosemite              | 3287595   | 1890-10-01       | -119.50   | 37.83    | 3082.7   |
 |  8 | Glacier               | 3081656   | 1910-05-11       | -114.00   | 48.80    | 4100.0   |
 
-- see text descriptions [here](URL)
+See text descriptions [here](URL)
+
+## Route Optimization Strategy
 
 
-
-## Most Popular First Route Model
-
-
-## Optimzed Route Model
+## Most-Visited Ordering Route Model:
+### ost-Visited Ordering Route Model Results:
 
 
+## Optimzed Route Model:
 
+### Optimized Route Results:
+
+
+## Conclusion
 
 
 
