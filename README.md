@@ -89,12 +89,9 @@ Using the data, we found the 9 top most vistied parks, and from there plan out a
 
 See text descriptions [here](URL)
 
-![Date Established](June-Code-Jam-2024/notebook/date_est.png)
+![Date Established](June-Code-Jam-2024/notebook/graphs/date_est.png)
 
-/graphs/
-Directory actions
-Add file
-More options
+
 
 ## Route Optimization Strategy
 
