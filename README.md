@@ -24,7 +24,8 @@ Follow these steps to set up the project locally:
    git clone https://github.com/RPinkha/June-Code-Jam-2024.git
    cd June-Code-Jam-2024
    npm install
-   npm run dev '''
+   npm run dev
+bash '''
 
   
 
