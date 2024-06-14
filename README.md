@@ -95,7 +95,8 @@ See text descriptions [here](URL)
 
 ![Area Date Visitors](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/area_date_visitor_bubble.png)
 
-![Area Date Visitors](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/area_date_visitor_bubble.png)
+![Most Visited Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/most_visitied_route.png)
+
 
 ![Area Visitors](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/area_visitors.png)
 
@@ -116,6 +117,7 @@ Yosemite to Glacier: 1066.51 miles
 **Total Distance: 11121.51 miles**
 
 ## Optimzed Route Model:
+![Optimal Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/optimal_route.png)
 
 ### Optimized Route Results:
 
