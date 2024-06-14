@@ -30,22 +30,27 @@
         </a>
 
         <nav class="nav">
-          <li class="nav__item">
-            <a href="#page-about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#page-route" class="nav__link">Route</a>
-          </li>
-          <li class="nav__item">
-            <a href="#page-tunes" class="nav__link">Tunes</a>
-          </li>
-          <li class="nav__item">
-            <a href="#page-suggest" class="nav__link">Suggest</a>
-          </li>
-          <li class="nav__item">
-            <a href="#footer" class="nav__link">Contact</a>
-          </li>
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="#page-about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#page-route" class="nav__link">Route</a>
+            </li>
+            <li class="nav__item">
+              <a href="#page-tunes" class="nav__link">Tunes</a>
+            </li>
+            <li class="nav__item">
+              <a href="#page-suggestions" class="nav__link">Suggest</a>
+            </li>
+            <li class="nav__item">
+              <a href="#footer" class="nav__link">Contact</a>
+            </li>
+          </ul>
         </nav>
+        <button class="nav__toggle"></button>
+        <div class="nav__toggle-line nav__toggle-line_top"></div>
+        <div class="nav__toggle-line nav__toggle-line_bottom"></div>
       </header>
       <div class="page__break"></div>
 
@@ -101,13 +106,13 @@
             <div class="footer__links">
               <a
                 class="footer__link"
-                href=""
+                href="https://www.linkedin.com/in/mrandrewhuang/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
                   class="footer__icon"
-                  src="<%=require('./images/LinkedIn Original.svg')%>"
+                  src="<%=require('./images/LinkedIn Negative.svg')%>"
                   alt="LinkedIn logo"
                 />
               </a>
@@ -119,7 +124,7 @@
               >
                 <img
                   class="footer__icon"
-                  src="<%=require('./images/Github Original.svg')%>"
+                  src="<%=require('./images/Github Negative.svg')%>"
                   alt="GitHub logo"
                 />
               </a>
@@ -136,7 +141,7 @@
               >
                 <img
                   class="footer__icon"
-                  src="<%=require('./images/LinkedIn Original.svg')%>"
+                  src="<%=require('./images/LinkedIn Negative.svg')%>"
                   alt="LinkedIn logo"
                 />
               </a>
@@ -148,7 +153,7 @@
               >
                 <img
                   class="footer__icon"
-                  src="<%=require('./images/Github Original.svg')%>"
+                  src="<%=require('./images/Github Negative.svg')%>"
                   alt="GitHub logo"
                 />
               </a>
@@ -165,7 +170,7 @@
               >
                 <img
                   class="footer__icon"
-                  src="<%=require('./images/LinkedIn Original.svg')%>"
+                  src="<%=require('./images/LinkedIn Negative.svg')%>"
                   alt="LinkedIn logo"
                 />
               </a>
@@ -177,7 +182,7 @@
               >
                 <img
                   class="footer__icon"
-                  src="<%=require('./images/Github Original.svg')%>"
+                  src="<%=require('./images/Github Negative.svg')%>"
                   alt="GitHub logo"
                 />
               </a>
@@ -194,7 +199,7 @@
               >
                 <img
                   class="footer__icon"
-                  src="<%=require('./images/LinkedIn Original.svg')%>"
+                  src="<%=require('./images/LinkedIn Negative.svg')%>"
                   alt="LinkedIn logo"
                 />
               </a>
@@ -206,7 +211,7 @@
               >
                 <img
                   class="footer__icon"
-                  src="<%=require('./images/Github Original.svg')%>"
+                  src="<%=require('./images/Github Negative.svg')%>"
                   alt="GitHub logo"
                 />
               </a>
@@ -214,8 +219,9 @@
           </li>
         </ul>
         <p class="footer__copyright">
-          Copyright <span class="footer__year"></span> © -
-          <span class="footer__span-newline">
+          <span class="footer__copyright_top-line"
+            >Copyright <span class="footer__year"></span> © -
+            <span class="footer__span-newline"></span>
             All Rights Reserved by ParkSparks
           </span>
         </p>

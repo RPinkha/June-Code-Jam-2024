@@ -6,10 +6,17 @@
   margin: 0px;
   padding: 0px;
 }
-.nav__item {
+.nav__links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   display: flex;
+  flex-direction: row;
   align-items: center;
   height: 100%;
+}
+
+.nav__item {
   margin: 0px;
   padding: 0px;
   border: none;
@@ -17,9 +24,9 @@
 .nav__link {
   color: #f5f5f7;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 15px;
   margin: 0px;
-  padding: 25px;
+  padding: 20px;
   background-color: #355847;
   height: 100%;
   border: none;
@@ -27,4 +34,95 @@
 .nav__link:hover {
   color: #0c1821;
   background-color: #e78895;
+}
+
+.nav__toggle {
+  display: none;
+  background-color: #eee0cb;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  position: absolute;
+  top: 13px;
+  right: 12px;
+}
+
+.nav__toggle-line {
+  display: none;
+  width: 28px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #000;
+  position: absolute;
+  right: 20px;
+  pointer-events: none;
+  z-index: 999;
+  transition: 0.5s;
+}
+
+.nav__toggle-line_top {
+  top: 29px;
+}
+
+.nav__toggle-line_bottom {
+  top: 39px;
+}
+
+@media (max-width: 800px) {
+  .nav__link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav__link:hover {
+    color: #0c1821;
+    background-color: #88b29e;
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 5px;
+    right: 2px;
+    background-color: #88b29e;
+    height: auto;
+    gap: 10px;
+    border: 1px solid #fff;
+    padding: 60px 10px 10px;
+    border-radius: 10px;
+  }
+
+  .nav__links_open {
+    display: flex;
+  }
+
+  .nav__link {
+    padding: 0;
+    background-color: #88b29e;
+  }
+
+  .nav__close-open {
+    display: block;
+  }
+
+  .nav__toggle-line {
+    display: block;
+  }
+
+  .nav__toggle-line_top-rotate {
+    transform: translateY(5px) rotate(45deg);
+  }
+
+  .nav__toggle-line_bottom-rotate {
+    transform: translateY(-5px) rotate(-45deg);
+  }
 }
