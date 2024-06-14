@@ -76,17 +76,42 @@
           <div class="suggest__container">
             <h2 class="suggest__title">Suggest Your Favorite Park</h2>
             <form class="suggest__form">
+              <label class="suggest__label">Favorite Park:</label>
               <input
                 type="text"
                 class="suggest__input"
                 name="park"
                 id="park"
                 placeholder="Favorite Park"
-                maxlength="100"
+                maxlength="50"
                 minlength="3"
                 required
               />
               <span class="suggest__error" id="park-error"></span>
+              <label class="suggest__label">Name:</label>
+              <input
+                type="name"
+                class="suggest__input"
+                name="park"
+                id="name"
+                placeholder="Name"
+                maxlength="100"
+                minlength="2"
+                required
+              />
+              <span class="suggest__error" id="name-error"></span>
+              <label class="suggest__label">Email:</label>
+              <input
+                type="email"
+                class="suggest__input"
+                name="park"
+                id="email"
+                placeholder="Email"
+                maxlength="40"
+                minlength="5"
+                required
+              />
+              <span class="suggest__error" id="email-error"></span>
               <button type="submit" class="suggest__submit-button" disabled>
                 Suggest
               </button>
