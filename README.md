@@ -1,5 +1,5 @@
 June 2024 Code Jam - Park Sparks
-![Alt Text](URL)
+![Alt Text](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/parksparks.png)
 
 # Park Sparks : Optimal National Park Route
 
@@ -23,7 +23,7 @@ https://www.kaggle.com/datasets/thedevastator/the-united-states-national-parks
 
 https://data.world/kevinnayar/us-national-parks
 
-**final_9parks.csv** - Final cleaned .csv for [download](URL) and use in the project.
+**final_9parks.csv** - Final cleaned .csv for [download](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/src/scripts/final_9parks.csv) and use in the project.
 
 - *name*: Name of National Park
 - *visitors*: Number of annual visitors for 2021
