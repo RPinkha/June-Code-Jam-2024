@@ -15,9 +15,11 @@ Park Sparks provides the optimal route to the most popular national parks, provi
 Datasets used:
 
 **nationparks.csv** - "The United States National Parks" - includes Name, Visitors, Date Established, Description and Area. 
+
 https://www.kaggle.com/datasets/thedevastator/the-united-states-national-parks 
 
 **us-national-parks.json** - "us-national-parks" - includes Longitutde, Latitude, park info and descripton. 
+
 https://data.world/kevinnayar/us-national-parks
 
 **final_9parks.csv** - Final cleaned .csv for [download](URL) and use in the project.
@@ -30,10 +32,13 @@ https://data.world/kevinnayar/us-national-parks
 - *latitude*: Latitude coordinate of the park
 - *area_km2*: Total area of the park in square kilometers
 
+The dataset contains information on country abbreviation, latitude, and longitude for 245 countries around the world. The data were explored for missing values, duplicates, and incorrect values. Only one missing value was found, and it was dropped from the data. Data were otherwise in good condition and ready for analysis.
 
 
+## Most Popular First Route Model
 
 
+## Optimzed Route Model
 
 
 
