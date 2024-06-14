@@ -1,0 +1,85 @@
+{
+  "parks": [
+    {
+      "name": "Acadia",
+      "description": "Covering most of Mount Desert Island and other coastal islands, Acadia features the tallest mountain on the Atlantic coast of the United States, granite peaks, ocean shoreline, woodlands, and lakes. There are freshwater, estuary, forest, and intertidal habitats.",
+      "longitude": -68.21,
+      "latitude": 44.35,
+      "area_km2": 198.6,
+      "base_order": 5,
+      "optimized_order": 8
+    },
+    {
+      "name": "Glacier",
+      "description": "The U.S. half of Waterton-Glacier International Peace Park, this park includes 26 rapidly receding glaciers and 130 named lakes surrounded by Rocky Mountain peaks. Historic hotels and the landmark Going-to-the-Sun Road accommodate visitors. The local mountains, formed by an overthrust, expose Paleozoic fossils including trilobites, mollusks, giant ferns and dinosaurs. The park is also home to Triple Divide Peak, which forms the boundary between the watersheds of the Atlantic, Pacific, and Arctic Oceans.",
+      "longitude": -114.0,
+      "latitude": 48.8,
+      "area_km2": 4100.0,
+      "base_order": 2,
+      "optimized_order": 9
+    },
+    {
+      "name": "Grand Canyon",
+      "description": "The Grand Canyon, carved by the mighty Colorado River, is 277 miles (446\u00a0km) long, up to 1 mile (1.6\u00a0km) deep, and up to 15 miles (24\u00a0km) wide. Millions of years of erosion have resulted in a massive three-tiered canyon, exposing the multicolored layers of the Colorado Plateau in mesas and canyon walls, visible from trails that descend into the canyon from the north and south rims.",
+      "longitude": -112.14,
+      "latitude": 36.06,
+      "area_km2": 4862.9,
+      "base_order": 4,
+      "optimized_order": 5
+    },
+    {
+      "name": "Grand Teton",
+      "description": "Grand Teton is the tallest mountain in the scenic Teton Range. The park's historic Jackson Hole and reflective piedmont lakes teem with endemic wildlife, with a backdrop of craggy mountains that rise abruptly from the sage-covered valley below.",
+      "longitude": -110.8,
+      "latitude": 43.73,
+      "area_km2": 1254.7,
+      "base_order": 7,
+      "optimized_order": 2
+    },
+    {
+      "name": "Great Smoky Mountains",
+      "description": "The Great Smoky Mountains, part of the Appalachian Mountains, span a wide range of elevations, making them home to over 400 vertebrate species, 100 tree species, and 5,000 plant species. Hiking is the park's main attraction, with over 800 miles (1,300\u00a0km) of trails, including 70 miles (110\u00a0km) of the Appalachian Trail. Other activities include fishing, horseback riding, and touring nearly 80 historic structures.",
+      "longitude": -83.53,
+      "latitude": 35.68,
+      "area_km2": 2114.2,
+      "base_order": 8,
+      "optimized_order": 7
+    },
+    {
+      "name": "Rocky Mountain",
+      "description": "Bisected north to south by the Continental Divide, this portion of the Rockies has ecosystems varying from over 150 riparian lakes to montane and subalpine forests to treeless alpine tundra. Wildlife including elk, moose, mule deer, bighorn sheep, black bears, and cougars inhabit its igneous mountains and glacial valleys. Longs Peak, a classic Colorado fourteener, and the scenic Bear Lake are popular destinations, as well as the historic Trail Ridge Road, which reaches an elevation of more than 12,000 feet (3,700\u00a0m).",
+      "longitude": -105.58,
+      "latitude": 40.4,
+      "area_km2": 1075.7,
+      "base_order": 3,
+      "optimized_order": 6
+    },
+    {
+      "name": "Yellowstone",
+      "description": "Situated on the Yellowstone Caldera, the park has an expansive network of geothermal areas including boiling mud pots, vividly colored hot springs such as Grand Prismatic Spring, and regularly erupting geysers, the best-known being Old Faithful. The yellow-hued Grand Canyon of the Yellowstone River contains several high waterfalls, and four mountain ranges traverse the park. More than 60 mammal species including timber wolves, grizzly bears, black bears, lynxes, bison, and elk make this park one of the best wildlife viewing spots in the country.",
+      "longitude": -110.5,
+      "latitude": 44.6,
+      "area_km2": 8983.2,
+      "base_order": 0,
+      "optimized_order": 1
+    },
+    {
+      "name": "Yosemite",
+      "description": "Yosemite features sheer granite cliffs, exceptionally tall waterfalls, and old-growth forests at a unique intersection of geology and hydrology. Half Dome and El Capitan rise from the park's centerpiece, the glacier-carved Yosemite Valley, and from its vertical walls drop Yosemite Falls, one of North America's tallest waterfalls at 2,425 feet (739\u00a0m) high. Three giant sequoia groves, along with a pristine wilderness in the heart of the Sierra Nevada, are home to a wide variety of rare plant and animal species.",
+      "longitude": -119.5,
+      "latitude": 37.83,
+      "area_km2": 3082.7,
+      "base_order": 1,
+      "optimized_order": 3
+    },
+    {
+      "name": "Zion",
+      "description": "Located at the junction of the Colorado Plateau, Great Basin, and Mojave Desert, this park contains sandstone features such as mesas, rock towers, and canyons, including the Virgin River Narrows. The various sandstone formations and the forks of the Virgin River create a wilderness divided into four ecosystems: desert, riparian, woodland, and coniferous forest.",
+      "longitude": -113.05,
+      "latitude": 37.3,
+      "area_km2": 595.9,
+      "base_order": 6,
+      "optimized_order": 4
+    }
+  ]
+}
