@@ -95,15 +95,14 @@ See text descriptions [here](URL)
 
 ![Area Date Visitors](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/area_date_visitor_bubble.png)
 
-![Most Visited Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/most_visitied_route.png)
-
-
 ![Area Visitors](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/area_visitors.png)
 
 ## Route Optimization Strategy
 
 
 ## Most-Visited Ordering Route Model:
+![Most Visited Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/most_visitied_route.png)
+
 ### Most-Visited Ordering Route Model Results:
 
 Great Smoky Mountains to Zion: 2006.39 miles
