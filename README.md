@@ -89,9 +89,9 @@ Using the data, we found the 9 top most vistied parks, and from there plan out a
 
 See text descriptions [here](URL)
 
-![Date Established](June-Code-Jam-2024/notebook/graphs/date_est.png)
+![Date Established](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/date_est.pngJune-Code-Jam-2024/notebook/graphs/date_est.png)
 
-
+![Top 9 Parks](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/top9parks.png)
 
 ## Route Optimization Strategy
 
