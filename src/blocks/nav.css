@@ -73,3 +73,48 @@
 .nav__toggle-line_bottom {
   top: 44px;
 }
+
+@media (max-width: 700px) {
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__links {
+    display: none;
+    position: absolute;
+    height: 208px;
+    width: 100%;
+    top: 18px;
+    left: 0px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .nav__links_open {
+    display: flex;
+  }
+
+  .nav__links_closed {
+    display: none;
+  }
+
+  .nav__links-close {
+    display: block;
+  }
+
+  .nav__toggle-line {
+    display: block;
+  }
+
+  .nav__toggle-line_top-rotate {
+    transform: translateY(5px) rotate(45deg);
+  }
+
+  .nav__toggle-line_bottom-rotate {
+    transform: translateY(-5px) rotate(-45deg);
+  }
+}
