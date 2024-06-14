@@ -59,6 +59,8 @@ https://data.world/kevinnayar/us-national-parks
 
 The datasets were merged to conatin the above information for 63 national parks in the Unites States.The data underwent an initial preprocessing stage as part of an exploratory data analysis (EDA), during which they were carefully parsed, relabeled, and sorted. Additionally, corrections were made to ensure consistency in type and format.
 
+Using the data, we found the 9 top most vistied parks, and from there plan out a route that is ordered by most-visited, or ideally, the Optimal Route.
+
 ## Top 9 National Parks:
 
 |  # | Name                  | Visitors  | Date Established | Longitude | Latitude | Area km² |
