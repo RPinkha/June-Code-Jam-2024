@@ -24,7 +24,7 @@ function removeThankYou() {
 }
 const submitSuggestion = function () {
   thankYou.classList.add("suggest__thankyou_show");
-  setTimeout(removeThankYou, 2000);
+  setTimeout(removeThankYou, 30000);
 };
 document.addEventListener("submit", (evt) => {
   evt.preventDefault();
