@@ -9,7 +9,7 @@ from ortools.constraint_solver import routing_enums_pb2, pywrapcp
 # Top 9 Parks: Load Datasets
 
 # Load park location dateset
-top_9_parks = pd.read_csv('../notebooks/final_9parks.csv')
+top_9_parks = pd.read_csv('../../notebook/final_9parks.csv')
 
 # Optimized Model: Calculate Distance
 
