@@ -103,7 +103,8 @@ Using the data, we found the 9 top most vistied parks, and from there plan out a
 See Nation Park text descriptions [here](URL)
 
 ![Top 9 Parks](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/top9parks.png)
-<img src="[path_to_your_image.jpg](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/top9parks.png)" alt="Image description" width="800">
+<img src="https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/top9parks.png" alt="Top 9 Parks" style="width:800px;"/>
+
 
 ![Date Established](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/date_est.png)
 
