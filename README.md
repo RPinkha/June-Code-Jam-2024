@@ -102,15 +102,12 @@ Using the data, we found the 9 top most vistied parks, and from there plan out a
 
 See Nation Park text descriptions [here](URL)
 
-![Top 9 Parks](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/top9parks.png)
 <img src="https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/top9parks.png" alt="Top 9 Parks" style="width:800px;"/>
+<img src="https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/date_est.png" alt="Date Established" style="width:800px;"/>
 
+<img src="https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/area_date_visitor_bubble.png" alt="Area Date Visitors" style="width:800px;"/>
 
-![Date Established](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/date_est.png)
-
-![Area Date Visitors](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/area_date_visitor_bubble.png)
-
-![Area Visitors](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/area_visitors.png)
+<img src="https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/area_visitors.png" alt="Area Visitors" style="width:800px;"/>
 
 ## Route Optimization Strategy
 
