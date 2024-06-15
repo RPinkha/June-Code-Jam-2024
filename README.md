@@ -101,7 +101,6 @@ Using the data, we found the 9 top most vistied parks, and from there plan out a
 |  8 | Glacier               | 3081656   | 1910-05-11       | -114.00   | 48.80    | 4100.0   |
 
 See Nation Park text descriptions [here](URL)
-<div style="text-align: center;">
 <img src="https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/top9parks.png" alt="Top 9 Parks" style="width:800px;"/>
 This map marks the locations of the top 9 national parks in the United States, chosen by highest visitor count. Providing a straightforward way to visualize the geographic distribution of the parks across the country. The geographic distribution of these top parks shows a concentration in the western United States, reflecting the region's larger wilderness areas.
 
@@ -112,8 +111,9 @@ This line chart visualizes the establishment dates of the top 9 national parks i
 This bubble chart plots the area (in km²) of the national parks against their establishment dates. The size of each bubble represents the number of visitors, and the colors differentiate the parks. Larger bubbles indicate parks with higher visitor counts. The chart is useful for those interested in exploring national parks and historical sites.
 
 <img src="https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/area_visitors.png" alt="Area Visitors" style="width:800px;"/>
+
 Above is a bubble map of the top national parks on a map of the US, where the size of the marker represents the area of the park and the color represents the number of visitors. This serves as a geographic frame of reference of park locations and their sizes across the country. Larger parks in the west like Yellowstone and Grand Canyon not only have substantial areas but also attract a good number of visitors. In contrast, some smaller parks in the east also see high visitor numbers. However, Great Smoky Mountians sees the most visitors while being the middle in terms of size.
-</div>
+
 ## Route Optimization Strategy
 
 Below are conclusions based on the different routing strategies and distance calculation techniques used:
