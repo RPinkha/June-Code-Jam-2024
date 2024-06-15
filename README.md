@@ -57,7 +57,7 @@ This should update the existing JSON file in /data/parks_data.json. This JSON fi
 **2. Route Optimization:**
 - Utilized geographical coordinates (longitude and latitude) of the selected parks to plan optimal routes.
 - Selected the most popular ordered park route model, and the optimal route model
-- 
+
 **3. Data Integration and Analysis:**
 - Merged datasets including park information and location coordinates to facilitate comprehensive route mapping.
 - Employed statistical analysis and data visualization techniques to present findings effectively.
