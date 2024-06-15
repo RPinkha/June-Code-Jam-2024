@@ -117,25 +117,18 @@ Above is a bubble map of the top national parks on a map of the US, where the si
 ## Route Optimization Strategy
 
 Below are conclusions based on the different routing strategies and distance calculation techniques used:
+
 **Haversine Distance Calculation**
-Purpose: The Haversine formula is useful for calculating the great-circle distance between two points on the Earth's surface, which is an approximation of the shortest distance over the Earth's surface.
-    Application: Ideal for quick distance estimations and initial route planning when exact road distances are not required.
-    Pros: Simple to implement, computationally efficient, and provides a good approximation for most purposes.
-    Cons: Does not account for actual travel routes, which may involve roads, detours, or obstacles, and less accurate for large distances or when precise navigation is required.
+The Haversine formula is useful for calculating the great-circle distance between two points on the Earth's surface, which is an approximation of the shortest distance over the Earth's surface. Ideal for quick distance estimations and initial route planning when exact road distances are not required.
 
 **OSRM (Open Source Routing Machine) API**
-
-    Purpose: OSRM is used to calculate realistic driving routes based on road networks, considering actual driving conditions, road restrictions, and traffic data.
-    Application: Essential for detailed travel planning and navigation, ensuring that the routes are practical and follow real-world constraints.
-    Pros: Provides accurate travel routes based on actual road networks, considers driving constraints such as speed limits and one-way streets, and is useful for both shortest and fastest path calculations.
-    Cons: More complex and computationally intensive compared to the Haversine formula, requiring access to road network data and potentially an internet connection for API usage.
+OSRM is used to calculate realistic driving routes based on road networks, considering actual driving conditions, road restrictions, and traffic data. Essential for detailed travel planning and navigation, ensuring that the routes are practical and follow real-world constraints.
+    
 
 **Traveling Salesman Problem (TSP) Solved with OR-Tools**
+The TSP finds the shortest possible route that visits each location exactly once and returns to the origin point. This is particularly useful for optimizing travel routes to minimize distance or time. Utilized for optimal route planning in various scenarios such as logistics, delivery services, and efficient trip planning.
 
-    Purpose: The TSP finds the shortest possible route that visits each location exactly once and returns to the origin point. This is particularly useful for optimizing travel routes to minimize distance or time.
-    Application: Utilized for optimal route planning in various scenarios such as logistics, delivery services, and efficient trip planning.
-    Pros: OR-Tools provides robust algorithms to efficiently solve the TSP, ensuring that the best possible route is determined.
-    Cons: The problem can be computationally expensive for a large number of locations, and while OR-Tools is efficient, it still requires careful parameter tuning for best performance.
+## Route Models
 
 ## Most-Visited Ordering Route Model:
 ![Most Visited Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/most_visitied_route.png)
