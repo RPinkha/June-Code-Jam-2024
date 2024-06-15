@@ -82,8 +82,21 @@ parks_data = {
     'parks': []
 }
 
+# Hardcoded images dictionary
+image_url_dict = {
+    'Acadia': 'https://www.nps.gov/common/uploads/grid_builder/acad/crop16_9/502982C7-F441-2BDF-5FAF02A81C420E5E.jpg',
+    'Glacier': 'https://www.nps.gov/common/uploads/grid_builder/glac/crop1_1/4DC1DCBC-1DD8-B71B-0B08B7CCA02198DE.jpg',
+    'Grand Canyon': 'https://www.nps.gov/grca/planyourvisit/images/powell-pt-640.jpg',
+    'Grand Teton': 'https://www.nps.gov/common/uploads/grid_builder/grte/crop16_9/1F0235E8-DC7D-04FB-828DB0F96362E536.jpg',
+    'Great Smoky Mountains': 'https://www.nps.gov/common/uploads/grid_builder/grsm/crop16_9/82A2A8AA-DB85-E32F-A44F39F51C3052FB.jpg',
+    'Rocky Mountain': 'https://www.nps.gov/common/uploads/grid_builder/romo/crop16_9/729AF759-EE25-2BE5-059D883B2F6B6F50.jpg',
+    'Yellowstone': 'https://www.nps.gov/common/uploads/grid_builder/yell/crop16_9/1DC2A26C-9F15-26FA-6589D295CB04DB90.jpg',
+    'Yosemite': 'https://www.nps.gov/common/uploads/grid_builder/yose/crop16_9/919529B5-1DD8-B71B-0B61F901E854111D.jpg',
+    'Zion': 'https://www.nps.gov/common/uploads/grid_builder/zion/crop16_9/3F936BF4-1DD8-B71B-0B335232937DB252.jpg'
+}
+
 for i, (idx, park) in enumerate(optimal_parks.iterrows()):
-    base_order = int(top_9_parks[top_9_parks['name'] == park['name']].index[0])
+    baseline_order = int(top_9_parks[top_9_parks['name'] == park['name']].index[0])
     
     parks_dict = {
         'name': park['name'],
@@ -91,7 +104,8 @@ for i, (idx, park) in enumerate(optimal_parks.iterrows()):
         'longitude': park['longitude'],
         'latitude': park['latitude'],
         'area_km2': park['area_km2'],
-        'base_order': base_order,
+        'image_url': image_url_dict.get(park['name'], ''),
+        'baseline_order': baseline_order,
         'optimized_order': i + 1
     }
 
