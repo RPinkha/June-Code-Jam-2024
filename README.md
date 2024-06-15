@@ -106,13 +106,36 @@ See Nation Park text descriptions [here](URL)
 This map marks the locations of the top 9 national parks in the United States, chosen by highest visitor count. Providing a straightforward way to visualize the geographic distribution of the parks across the country. The geographic distribution of these top parks shows a concentration in the western United States, reflecting the region's larger wilderness areas.
 
 <img src="https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/date_est.png" alt="Date Established" style="width:800px;"/>
+This line chart visualizes the establishment dates of the top 9 national parks in the United States. Each point on the line represents a national park, ordered chronologically from Yellowstone (established in 1872) to Great Smoky Mountains (established in 1934). Based on the plot, three parks (Grand Canyon, Acadia, and Zion) were all established in 1919. There is a significant increase in the number of national parks established during the early 20th century, highlighting a period of heightened conservation efforts and national park creation.
 
 <img src="https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/area_date_visitor_bubble.png" alt="Area Date Visitors" style="width:800px;"/>
+This bubble chart plots the area (in km²) of the national parks against their establishment dates. The size of each bubble represents the number of visitors, and the colors differentiate the parks. Larger bubbles indicate parks with higher visitor counts. The chart is useful for those interested in exploring national parks and historical sites.
 
 <img src="https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/area_visitors.png" alt="Area Visitors" style="width:800px;"/>
+Above is a bubble map of the top national parks on a map of the US, where the size of the marker represents the area of the park and the color represents the number of visitors. This serves as a geographic frame of reference of park locations and their sizes across the country. Larger parks in the west like Yellowstone and Grand Canyon not only have substantial areas but also attract a good number of visitors. In contrast, some smaller parks in the east also see high visitor numbers. However, Great Smoky Mountians sees the most visitors while being the middle in terms of size.
 
 ## Route Optimization Strategy
 
+Below are conclusions based on the different routing strategies and distance calculation techniques used:
+**Haversine Distance Calculation**
+Purpose: The Haversine formula is useful for calculating the great-circle distance between two points on the Earth's surface, which is an approximation of the shortest distance over the Earth's surface.
+    Application: Ideal for quick distance estimations and initial route planning when exact road distances are not required.
+    Pros: Simple to implement, computationally efficient, and provides a good approximation for most purposes.
+    Cons: Does not account for actual travel routes, which may involve roads, detours, or obstacles, and less accurate for large distances or when precise navigation is required.
+
+**OSRM (Open Source Routing Machine) API**
+
+    Purpose: OSRM is used to calculate realistic driving routes based on road networks, considering actual driving conditions, road restrictions, and traffic data.
+    Application: Essential for detailed travel planning and navigation, ensuring that the routes are practical and follow real-world constraints.
+    Pros: Provides accurate travel routes based on actual road networks, considers driving constraints such as speed limits and one-way streets, and is useful for both shortest and fastest path calculations.
+    Cons: More complex and computationally intensive compared to the Haversine formula, requiring access to road network data and potentially an internet connection for API usage.
+
+**Traveling Salesman Problem (TSP) Solved with OR-Tools**
+
+    Purpose: The TSP finds the shortest possible route that visits each location exactly once and returns to the origin point. This is particularly useful for optimizing travel routes to minimize distance or time.
+    Application: Utilized for optimal route planning in various scenarios such as logistics, delivery services, and efficient trip planning.
+    Pros: OR-Tools provides robust algorithms to efficiently solve the TSP, ensuring that the best possible route is determined.
+    Cons: The problem can be computationally expensive for a large number of locations, and while OR-Tools is efficient, it still requires careful parameter tuning for best performance.
 
 ## Most-Visited Ordering Route Model:
 ![Most Visited Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/most_visitied_route.png)
@@ -138,6 +161,10 @@ Yosemite to Glacier: 1066.51 miles
 **Total Distance: 11121.51 miles**
 
 ## Optimzed Route Model:
+For optimal route planning, the **Traveling Salesman Problem (TSP)** is solved. A one-way trip scenario, where the route spans from a starting point to a destination without returning to the origin.This problem finds the shortest route visiting each location exactly once, applicable to various real-world scenarios such as delivery services and supply chain management for efficient routing.
+
+To optimize the route, a **distance matrix** is crucial. This matrix calculates pairwise distances between geographic points, represented by latitude and longitude coordinates. Each element in the matrix denotes the distance between two locations, adding efficient route planning by providing insights into travel distances and optimal sequencing of stops. 
+
 ![Optimal Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/optimal_route.png)
 
 ### Optimized Route Results:
