@@ -163,7 +163,7 @@ The optimized route model significantly improves efficiency by reducing the tota
 ## Conclusion
 The optimized route highlights improvements in travel efficiency. By analyzing and restructuring the travel itinerary, the optimized route achieves a significant reduction in the total distance covered, directly translating to potential savings in travel time, fuel costs, and overall trip expenses.
 
-The first route, covering 11,121.51 miles, illustrates the extensive journey required when following a non-optimized path. In contrast, **the optimized route reduces the travel distance to 5,094.52 miles**, **By reducing the total travel distance by over 50%**, the optimized route highlights the practical benefits of strategic planning and optimization techniques.
+The first route, covering 11,121.51 miles, illustrates the extensive journey required when following a non-optimized path. In contrast, **the optimized route reduces the travel distance to 5,094.52 miles**, **By reducing the total travel distance by over 50%**.
 
 Implicit outcomes include:
 
