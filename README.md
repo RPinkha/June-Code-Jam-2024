@@ -103,6 +103,8 @@ Using the data, we found the 9 top most vistied parks, and from there plan out a
 See Nation Park text descriptions [here](URL)
 
 <img src="https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/top9parks.png" alt="Top 9 Parks" style="width:800px;"/>
+This map marks the locations of the top 9 national parks in the United States, chosen by highest visitor count. Providing a straightforward way to visualize the geographic distribution of the parks across the country. The geographic distribution of these top parks shows a concentration in the western United States, reflecting the region's larger wilderness areas.
+
 <img src="https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/date_est.png" alt="Date Established" style="width:800px;"/>
 
 <img src="https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/area_date_visitor_bubble.png" alt="Area Date Visitors" style="width:800px;"/>
