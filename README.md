@@ -50,17 +50,17 @@ Next, from the root folder, cd into cd src/scripts/ and run `python export_data_
 This should update the existing JSON file in /data/parks_data.json. This JSON file is now ready to use as a JavaScript import, etc.
 
 ## Data Project
-1. Data Collection and Selection:
+**1. Data Collection and Selection:**
 - Top 9 national parks were selected based on their high visitor counts in 2021.
 - Relevant data such as park names, recreation visitors, locations, areas, and descriptions were collected and organized.
 
-2. Route Optimization:
+**2. Route Optimization:**
 - Utilized geographical coordinates (longitude and latitude) of the selected parks to plan optimal routes.
-- Integrated additional factors like travel distances, possible stopovers, and road conditions to enhance route planning.
-
-3. Data Integration and Analysis:
+- Selected the most popular ordered park route model, and the optimal route model
+- 
+**3. Data Integration and Analysis:**
 - Merged datasets including park information and location coordinates to facilitate comprehensive route mapping.
-    Employed statistical analysis and data visualization techniques to present findings effectively.
+- Employed statistical analysis and data visualization techniques to present findings effectively.
 
 ### Datasets used:
 
