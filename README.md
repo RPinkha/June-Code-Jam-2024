@@ -49,6 +49,8 @@ Next, from the root folder, cd into cd src/scripts/ and run `python export_data_
 
 This should update the existing JSON file in /data/parks_data.json. This JSON file is now ready to use as a JavaScript import, etc.
 
+## Data Project
+
 ### Datasets used:
 
 **nationparks.csv** - "The United States National Parks" - includes Name, Visitors, Date Established, Description and Area. 
