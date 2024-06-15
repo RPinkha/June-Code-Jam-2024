@@ -50,6 +50,17 @@ Next, from the root folder, cd into cd src/scripts/ and run `python export_data_
 This should update the existing JSON file in /data/parks_data.json. This JSON file is now ready to use as a JavaScript import, etc.
 
 ## Data Project
+1. Data Collection and Selection:
+- Top 9 national parks were selected based on their high visitor counts in 2021.
+- Relevant data such as park names, recreation visitors, locations, areas, and descriptions were collected and organized.
+
+2. Route Optimization:
+- Utilized geographical coordinates (longitude and latitude) of the selected parks to plan optimal routes.
+- Integrated additional factors like travel distances, possible stopovers, and road conditions to enhance route planning.
+
+3. Data Integration and Analysis:
+- Merged datasets including park information and location coordinates to facilitate comprehensive route mapping.
+    Employed statistical analysis and data visualization techniques to present findings effectively.
 
 ### Datasets used:
 
@@ -89,7 +100,7 @@ Using the data, we found the 9 top most vistied parks, and from there plan out a
 |  7 | Yosemite              | 3287595   | 1890-10-01       | -119.50   | 37.83    | 3082.7   |
 |  8 | Glacier               | 3081656   | 1910-05-11       | -114.00   | 48.80    | 4100.0   |
 
-See text descriptions [here](URL)
+See Nation Park text descriptions [here](URL)
 
 ![Top 9 Parks](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/top9parks.png)
 
