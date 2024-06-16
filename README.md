@@ -225,12 +225,13 @@ Implicit outcomes include:
 
 This optimization not only achieves the primary goal of route efficiency but also provides a comprehensive approach to more sustainable and enjoyable travel. It underscores the value of optimization techniques in achieving practical and impactful results.
 
-## Prospective Developments and Next Steps
+### Prospective Developments and Next Steps
 This was a short turn around project and some elements were not able to be explored, so here are some improvements we would make:
 **Data Science Enhancements:**
 - Flexible Starting Point: Implementing a feature that allows users to choose a flexible starting point for route calculations, rather than a fixed starting location. This will improve the applicability of the tool for various use cases.
 - Dynamic Stop Management: Developing algorithms that support the addition or removal of stops dynamically. This will enable more flexible and efficient route optimization tailored to user needs.
 - Further Analysis: Conduct a comparative analysis of visitor data across different years. Create an NLP component to compare similar keywords in descriptions, enabling users to choose locations based on description similarities or interests.
+**Software Engineering Enhancements:**
 
 ### Members:
 
