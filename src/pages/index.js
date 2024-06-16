@@ -6,7 +6,9 @@ import {
   footerYear,
   currentYear,
   navLinks,
+  thankYou,
 } from "../utils/constants.js";
+import data from "../data/parks_data.json";
 
 footerYear.textContent = currentYear;
 navButton.addEventListener("click", () => {
@@ -18,7 +20,6 @@ navButton.addEventListener("click", () => {
 import "../scripts/validate.js";
 
 //suggest submit button
-const thankYou = document.querySelector(".suggest__thankyou");
 function removeThankYou() {
   thankYou.classList.remove("suggest__thankyou_show");
 }
