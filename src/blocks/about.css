@@ -10,7 +10,7 @@
   max-width: 100%;
   overflow: hidden;
   margin: 0px;
-  padding: 10px;
+  padding: 10px 10px 0px;
 }
 .about__container {
   max-width: 800px;
@@ -94,8 +94,14 @@
 }
 
 @media (max-width: 800px) {
+  .about__container {
+    margin-top: 0px;
+  }
+  .about__description {
+    margin-bottom: 0px;
+  }
   .about__arrow {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 50px;
   }
 }
