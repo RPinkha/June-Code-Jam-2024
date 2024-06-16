@@ -41,6 +41,7 @@
   width: 100%;
   line-height: 1.5em;
 }
+
 .about__arrow {
   max-width: 375px;
   width: 100%;
@@ -49,6 +50,7 @@
   margin-bottom: 172px;
   padding: 0px;
 }
+
 .about__locator {
   display: flex;
   justify-content: center;
@@ -66,6 +68,7 @@
   text-align: center;
   margin: 0px 0px 100px 50px;
 }
+
 .about__locator:hover {
   background-color: #e78895;
   cursor: pointer;
@@ -77,10 +80,12 @@
   .about {
     flex-direction: column;
   }
+
   .about__arrow {
     margin-top: 30px;
     margin-bottom: 50px;
   }
+
   .about__locator {
     top: 0px;
     margin: 0px 0px 50px;
@@ -91,23 +96,28 @@
   .about {
     flex-direction: column;
   }
+
   .about__container {
     padding: 0px 50px;
   }
+
   .about__slogan {
     font-size: 2.5rem;
     max-width: 300px;
   }
+
   .about__description {
     font-size: 1rem;
     max-width: 300px;
   }
+
   .about__arrow {
     margin-top: 30px;
     margin-bottom: 30px;
     max-width: 300px;
     height: 80px;
   }
+
   .about__locator {
     width: 20%;
     height: 20%;
