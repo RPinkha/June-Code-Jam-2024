@@ -1,6 +1,6 @@
 {
+  "unoptimizedDistance": 11171.62,
   "optimizedDistance": 5094.52,
-  "unoptimizedDistance": 11121.51,
   "parks": [
     {
       "name": "Acadia",
@@ -9,7 +9,7 @@
       "latitude": 44.35,
       "area_km2": 198.6,
       "image_url": "https://www.nps.gov/common/uploads/grid_builder/acad/crop16_9/502982C7-F441-2BDF-5FAF02A81C420E5E.jpg",
-      "baseline_order": 5,
+      "baseline_order": 6,
       "optimized_order": 2
     },
     {
@@ -19,7 +19,7 @@
       "latitude": 48.8,
       "area_km2": 4100.0,
       "image_url": "https://www.nps.gov/common/uploads/grid_builder/glac/crop1_1/4DC1DCBC-1DD8-B71B-0B08B7CCA02198DE.jpg",
-      "baseline_order": 8,
+      "baseline_order": 9,
       "optimized_order": 3
     },
     {
@@ -29,7 +29,7 @@
       "latitude": 36.06,
       "area_km2": 4862.9,
       "image_url": "https://www.nps.gov/grca/planyourvisit/images/powell-pt-640.jpg",
-      "baseline_order": 3,
+      "baseline_order": 4,
       "optimized_order": 8
     },
     {
@@ -39,7 +39,7 @@
       "latitude": 43.73,
       "area_km2": 1254.7,
       "image_url": "https://www.nps.gov/common/uploads/grid_builder/grte/crop16_9/1F0235E8-DC7D-04FB-828DB0F96362E536.jpg",
-      "baseline_order": 6,
+      "baseline_order": 7,
       "optimized_order": 5
     },
     {
@@ -49,7 +49,7 @@
       "latitude": 35.68,
       "area_km2": 2114.2,
       "image_url": "https://www.nps.gov/common/uploads/grid_builder/grsm/crop16_9/82A2A8AA-DB85-E32F-A44F39F51C3052FB.jpg",
-      "baseline_order": 0,
+      "baseline_order": 1,
       "optimized_order": 1
     },
     {
@@ -59,7 +59,7 @@
       "latitude": 40.4,
       "area_km2": 1075.7,
       "image_url": "https://www.nps.gov/common/uploads/grid_builder/romo/crop16_9/729AF759-EE25-2BE5-059D883B2F6B6F50.jpg",
-      "baseline_order": 4,
+      "baseline_order": 5,
       "optimized_order": 9
     },
     {
@@ -69,7 +69,7 @@
       "latitude": 44.6,
       "area_km2": 8983.2,
       "image_url": "https://www.nps.gov/common/uploads/grid_builder/yell/crop16_9/1DC2A26C-9F15-26FA-6589D295CB04DB90.jpg",
-      "baseline_order": 2,
+      "baseline_order": 3,
       "optimized_order": 4
     },
     {
@@ -79,7 +79,7 @@
       "latitude": 37.83,
       "area_km2": 3082.7,
       "image_url": "https://www.nps.gov/common/uploads/grid_builder/yose/crop16_9/919529B5-1DD8-B71B-0B61F901E854111D.jpg",
-      "baseline_order": 7,
+      "baseline_order": 8,
       "optimized_order": 6
     },
     {
@@ -89,7 +89,7 @@
       "latitude": 37.3,
       "area_km2": 595.9,
       "image_url": "https://www.nps.gov/common/uploads/grid_builder/zion/crop16_9/3F936BF4-1DD8-B71B-0B335232937DB252.jpg",
-      "baseline_order": 1,
+      "baseline_order": 2,
       "optimized_order": 7
     }
   ]
