@@ -1,6 +1,6 @@
 ### June 2024 Code Jam - Park Sparks
 
-![Alt Text](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/src/images/parkscene.png)
+![Alt Text](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/parksparks.png)
 
 # Park Sparks : Optimal National Park Route
 
