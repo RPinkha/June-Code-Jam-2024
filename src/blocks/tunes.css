@@ -1,0 +1,142 @@
+.tunes {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #88b29e;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.tunes__container {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  justify-content: center;
+  justify-items: flex-start;
+  align-items: center;
+  margin: 100px 25px;
+}
+
+.tunes__info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.tunes__title {
+  font-family: "EB Garamond", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  text-align: left;
+  color: #0c1821;
+  margin: 0px;
+  z-index: 1;
+}
+
+.tunes__description {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: #0c1821;
+  margin: 20px 0px;
+  z-index: 1;
+}
+
+.tunes__videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.tunes__video {
+  position: relative;
+  max-width: 100%;
+  width: 560px;
+  height: 315px;
+  z-index: 1;
+  border: 0;
+}
+
+.tunes__circle-big {
+  position: absolute;
+  top: -200px;
+  left: -30px;
+  width: 500px;
+  height: 500px;
+  background-color: #f5f5f7;
+  border-radius: 50%;
+  margin: 0px;
+  z-index: 0;
+}
+
+.tunes__circle-small {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #ccc9dc;
+  border-radius: 50%;
+  margin: 0px;
+  z-index: 0;
+}
+
+.tunes__arrow {
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  width: 500px;
+  height: 500px;
+  margin: 0px;
+  z-index: 0;
+  transform: rotate(-10deg);
+}
+
+@media (max-width: 800px) {
+  .tunes__container {
+    justify-items: center;
+    align-items: center;
+    margin: 30px 15px 50px;
+  }
+
+  .tunes__info {
+    margin-bottom: 15px;
+  }
+
+  .tunes__title {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .tunes__description {
+    font-size: 0.7em;
+    text-align: center;
+    margin: 15px 0px 0px;
+  }
+
+  .tunes__videos {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .tunes__video {
+    width: 280px;
+    height: 157.5px;
+  }
+
+  .tunes__arrow {
+    visibility: hidden;
+  }
+
+  .tunes__circle-big {
+    width: 400px;
+    height: 400px;
+  }
+}

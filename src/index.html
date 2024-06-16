@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Park Sparks</title>
-    <link rel="tab icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <meta
@@ -17,6 +17,7 @@
   </head>
   <body class="page">
     <div class="page__content">
+      <!--header-->
       <header class="header" id="header">
         <a class="header__anchor" href="#">
           <div class="header__container">
@@ -29,19 +30,20 @@
           </div>
         </a>
 
+        <!--navigation bar section-->
         <nav class="nav">
           <ul class="nav__links">
             <li class="nav__item">
-              <a href="#page-about" class="nav__link">About</a>
+              <a href="#about" class="nav__link">About</a>
             </li>
             <li class="nav__item">
-              <a href="#page-route" class="nav__link">Route</a>
+              <a href="#route" class="nav__link">Route</a>
             </li>
             <li class="nav__item">
-              <a href="#page-tunes" class="nav__link">Tunes</a>
+              <a href="#tunes" class="nav__link">Tunes</a>
             </li>
             <li class="nav__item">
-              <a href="#page-suggestions" class="nav__link">Suggest</a>
+              <a href="#suggest" class="nav__link">Suggest</a>
             </li>
             <li class="nav__item">
               <a href="#footer" class="nav__link">Contact</a>
@@ -52,41 +54,133 @@
         <div class="nav__toggle-line nav__toggle-line_top"></div>
         <div class="nav__toggle-line nav__toggle-line_bottom"></div>
       </header>
-      <div class="page__break"></div>
 
       <main class="main">
         <!--about section-->
-        <section class="about" id="page-about">
+        <section class="about" id="about">
           <div class="about__container">
-            <h2 class="about__slogan">Spark a New Adventure.</h2>
-            <p class="about__description">
-              Find the the perfect National Park route for the best roadtrip
-              experience!
-            </p>
-            <img
-              class="about__arrow"
-              src="<%=require('./images/ArrowThick.svg')%>"
-              alt="about arrow"
-            />
+            <div class="about__info">
+              <h2 class="about__slogan">Spark a New Adventure.</h2>
+              <p class="about__description">
+                Find the the perfect National Park route for the best roadtrip
+                experience!
+              </p>
+              <img
+                class="about__arrow"
+                src="<%=require('./images/ArrowThick.svg')%>"
+                alt="about arrow"
+              />
+            </div>
+            <a class="about__locator" href="#route"> Start My Route</a>
           </div>
-          <a class="about__locator" href="#page-route"> Start My Route</a>
+        </section>
+        <!--map section-->
+        <section class="route" id="route">
+          <h2 class="route__heading">Your Optimized Route:</h2>
+          <div class="route__map" id="map"></div>
+          <p class="route__caption">
+            The optimization model achieves a
+            <span
+              class="route__caption_data route__caption_data_optimized"
+            ></span>
+            route compared to an unoptimized
+            <span
+              class="route__caption_data route__caption_data_unoptimized"
+            ></span>
+            route, marking a
+            <span
+              class="route__caption_data route__caption_data_difference"
+            ></span>
+            difference and a
+            <span
+              class="route__caption_data route__caption_data_efficiency"
+            ></span>
+            increase in efficiency.
+          </p>
+        </section>
+        <!--Tunes section-->
+        <section class="tunes" id="tunes">
+          <div class="tunes__circle-small"></div>
+          <img
+            class="tunes__arrow"
+            src="<%=require('./images/ArrowBent.svg')%>"
+            alt="about arrow"
+          />
+          <div class="tunes__container">
+            <div class="tunes__info">
+              <div class="tunes__circle-big"></div>
+              <h2 class="tunes__title">Tunes for the Road</h2>
+              <p class="tunes__description">
+                Jam along to some music as you hit the road.
+              </p>
+            </div>
+
+            <div class="tunes__videos">
+              <iframe
+                class="tunes__video"
+                src="https://www.youtube.com/embed/zW5wpJY1rgQ?si=zQw_SUhsMGhiGkjV"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                class="tunes__video"
+                src="https://www.youtube.com/embed/3DkJoQINWcE?si=nQ4I9GOkYVAG5qlQ"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
         </section>
         <!--suggest section-->
-        <section class="suggest" id="page-suggest">
+        <section class="suggest" id="suggest">
+          <div class="suggest__circle-big"></div>
+          <div class="suggest__circle-small"></div>
+          <img
+            class="suggest__arrow"
+            src="<%=require('./images/ArrowBent.svg')%>"
+            alt="about arrow"
+          />
           <div class="suggest__container">
             <h2 class="suggest__title">Suggest Your Favorite Park</h2>
             <form class="suggest__form">
+              <label class="suggest__label">Favorite Park:</label>
               <input
                 type="text"
                 class="suggest__input"
                 name="park"
                 id="park"
                 placeholder="Favorite Park"
-                maxlength="100"
+                maxlength="50"
                 minlength="3"
                 required
               />
               <span class="suggest__error" id="park-error"></span>
+              <label class="suggest__label">Name:</label>
+              <input
+                type="name"
+                class="suggest__input"
+                name="park"
+                id="name"
+                placeholder="Name"
+                maxlength="100"
+                minlength="2"
+                required
+              />
+              <span class="suggest__error" id="name-error"></span>
+              <label class="suggest__label">Email:</label>
+              <input
+                type="email"
+                class="suggest__input"
+                name="park"
+                id="email"
+                placeholder="Email"
+                maxlength="40"
+                minlength="5"
+                required
+              />
+              <span class="suggest__error" id="email-error"></span>
               <button type="submit" class="suggest__submit-button" disabled>
                 Suggest
               </button>
@@ -99,6 +193,7 @@
           </div>
         </section>
       </main>
+      <!--footer-->
       <footer class="footer" id="footer">
         <ul class="footer__contacts">
           <li class="footer__contact">
@@ -227,5 +322,7 @@
         </p>
       </footer>
     </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
   </body>
 </html>

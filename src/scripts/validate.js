@@ -69,6 +69,7 @@ const enableValidation = function (options) {
     formElement.addEventListener("submit", (evt) => {
       evt.preventDefault();
       formElement.reset();
+      disableButton(evt.target.querySelector(options.submitButton));
     });
     setEventListeners(formElement, options);
   });
