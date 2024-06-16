@@ -14,10 +14,12 @@ export const thankYou = document.querySelector(".suggest__thankyou");
 
 export const currentYear = new Date().getFullYear();
 
-export const orderedParks = data.parks.sort(
+const parksForOptimizedOrder = [...data.parks];
+export const orderedParks = parksForOptimizedOrder.sort(
   (a, b) => a.optimized_order - b.optimized_order
 );
 
-export const unorderedParks = data.parks.sort(
-  (a, b) => a.optimized_order - b.optimized_order
+const parksForBaselineOrder = [...data.parks];
+export const unorderedParks = parksForBaselineOrder.sort(
+  (a, b) => a.baseline_order - b.baseline_order
 );

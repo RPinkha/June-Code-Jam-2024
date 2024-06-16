@@ -1,4 +1,5 @@
 import "./index.css";
+import "../scripts/validate.js";
 import {
   navButton,
   navButtonTopLine,
@@ -7,16 +8,19 @@ import {
   currentYear,
   navLinks,
   thankYou,
+  orderedParks,
+  unorderedParks,
 } from "../utils/constants.js";
 
+//footer year updates automatically every year
 footerYear.textContent = currentYear;
+
+//navButton mobile view interactiveity
 navButton.addEventListener("click", () => {
   navButtonTopLine.classList.toggle("nav__toggle-line_top-rotate");
   navButtonBottomLine.classList.toggle("nav__toggle-line_bottom-rotate");
   navLinks.classList.toggle("nav__links_open");
 });
-
-import "../scripts/validate.js";
 
 //suggest submit button
 function removeThankYou() {
