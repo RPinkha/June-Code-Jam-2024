@@ -12,6 +12,7 @@
   margin: 0px;
   padding: 10px;
 }
+
 .about__container {
   max-width: 800px;
   width: 100%;
@@ -25,6 +26,7 @@
   padding: 50px;
   z-index: 1;
 }
+
 .about__info {
   margin: 0px;
   z-index: 1;
@@ -35,6 +37,7 @@
   max-width: fit-content;
   width: 100%;
 }
+
 .about__slogan {
   margin: 0px;
   padding: 0px;
@@ -46,6 +49,7 @@
   width: 100%;
   word-wrap: wrap;
 }
+
 .about__description {
   margin-top: 25px;
   padding: 0px;
