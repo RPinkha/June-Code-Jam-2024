@@ -41,7 +41,7 @@
               <a href="#page-tunes" class="nav__link">Tunes</a>
             </li>
             <li class="nav__item">
-              <a href="#page-suggestions" class="nav__link">Suggest</a>
+              <a href="#page-suggest" class="nav__link">Suggest</a>
             </li>
             <li class="nav__item">
               <a href="#footer" class="nav__link">Contact</a>
@@ -71,8 +71,51 @@
           </div>
           <a class="about__locator" href="#page-route"> Start My Route</a>
         </section>
+        <!--Tunes section-->
+        <section class="tunes" id="page-tunes">
+          <div class="tunes__circle-big"></div>
+          <div class="tunes__circle-small"></div>
+          <img
+            class="tunes__arrow"
+            src="<%=require('./images/ArrowBent.svg')%>"
+            alt="about arrow"
+          />
+          <div class="tunes__container">
+            <h2 class="tunes__title">Tunes for the Road</h2>
+            <p class="tunes__description">
+              Jam along to some music as you hit the road.
+            </p>
+            <div class="tunes__videos">
+              <iframe
+                class="tunes__video"
+                src="https://www.youtube.com/embed/zW5wpJY1rgQ?si=zQw_SUhsMGhiGkjV"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                class="tunes__video"
+                src="https://www.youtube.com/embed/3DkJoQINWcE?si=nQ4I9GOkYVAG5qlQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
         <!--suggest section-->
         <section class="suggest" id="page-suggest">
+          <div class="suggest__circle-big"></div>
+          <div class="suggest__circle-small"></div>
+          <img
+            class="suggest__arrow"
+            src="<%=require('./images/ArrowBent.svg')%>"
+            alt="about arrow"
+          />
           <div class="suggest__container">
             <h2 class="suggest__title">Suggest Your Favorite Park</h2>
             <form class="suggest__form">
