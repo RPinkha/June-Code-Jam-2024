@@ -144,7 +144,7 @@ OR-Tools is used to solve the TSP, finding the shortest possible route that visi
 
 ## Most-Visited Ordering Route Model:
 
-![Most Visited Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/most_visitied_route.png)
+![Most Visited Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/assets/most_visitied_route.png)
 
 ### Most-Visited Ordering Route Model Results:
 
@@ -172,7 +172,7 @@ For optimal route planning, the **Traveling Salesman Problem (TSP)** is solved. 
 
 To optimize the route, a **distance matrix** is crucial. This matrix calculates pairwise distances between geographic points, represented by latitude and longitude coordinates. Each element in the matrix denotes the distance between two locations with optimal sequencing of stops.
 
-![Optimal Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/optimal_route.png)
+![Optimal Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/assets/optimal_route.png)
 
 ### Optimized Route Results:
 
