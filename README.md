@@ -12,7 +12,9 @@ Park Sparks provides the optimal route to the most popular national parks, provi
 
 [Figma](https://www.figma.com/design/odS8gABIYRzmXa7qBRb6eZ/JuneCodeJam%3A-ParkSparks?node-id=0-1&t=ZZvKbD4ke9s1d3nE-1)
 
-[Our live project](https://rpinkha.github.io/June-Code-Jam-2024/)
+## Webpage
+
+[Our Live Project](https://rpinkha.github.io/June-Code-Jam-2024/)
 
 ## Key Technologies
 
