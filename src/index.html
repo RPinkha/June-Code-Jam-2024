@@ -76,17 +76,26 @@
         </section>
         <!--map section-->
         <section class="route" id="route">
-          <div>
-            <label for="orderSelector">Select Order:</label>
-            <select id="orderSelector">
-              <option value="optimized">Optimized Order</option>
-              <option value="unordered">Unordered (Baseline) Order</option>
-            </select>
-          </div>
           <h2 class="route__heading">Find the Best Route</h2>
           <div class="route__map" id="map"></div>
           <p class="route__caption">
-            Our optimization model shows a distance of
+            The optimization model achieves a
+            <span
+              class="route__caption_data route__caption_data_optimized"
+            ></span>
+            route compared to an unoptimized
+            <span
+              class="route__caption_data route__caption_data_unoptimized"
+            ></span>
+            route, marking a
+            <span
+              class="route__caption_data route__caption_data_difference"
+            ></span>
+            difference and a
+            <span
+              class="route__caption_data route__caption_data_efficiency"
+            ></span>
+            increase in efficiency.
           </p>
         </section>
         <!--Tunes section-->

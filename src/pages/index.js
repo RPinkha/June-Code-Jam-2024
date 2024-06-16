@@ -10,10 +10,24 @@ import {
   thankYou,
   orderedParks,
   unorderedParks,
+  optimizedDistance,
+  unoptimizedDistance,
+  distanceDifference,
+  distanceEfficiency,
+  routeCaptionOptimized,
+  routeCaptionUnoptimized,
+  routeCaptionDifference,
+  routeCaptionEfficiency,
 } from "../utils/constants.js";
 
 //footer year updates automatically every year
 footerYear.textContent = currentYear;
+
+//data for the map caption
+routeCaptionOptimized.textContent = optimizedDistance + "-mile";
+routeCaptionUnoptimized.textContent = unoptimizedDistance + "-mile";
+routeCaptionDifference.textContent = distanceDifference + "-mile";
+routeCaptionEfficiency.textContent = distanceEfficiency + "%";
 
 //navButton mobile view interactiveity
 navButton.addEventListener("click", () => {
@@ -28,7 +42,7 @@ function removeThankYou() {
 }
 const submitSuggestion = function () {
   thankYou.classList.add("suggest__thankyou_show");
-  setTimeout(removeThankYou, 30000);
+  setTimeout(removeThankYou, 15000);
 };
 document.addEventListener("submit", (evt) => {
   evt.preventDefault();
@@ -78,20 +92,5 @@ function addRoutingToMap(parks) {
   }).addTo(map);
 }
 
-// Initial markers and routing based on optimized order
 addMarkersToMap(orderedParks);
 addRoutingToMap(orderedParks);
-
-// Event listener for dropdown change
-document
-  .getElementById("orderSelector")
-  .addEventListener("change", function () {
-    const selectedValue = this.value;
-    if (selectedValue === "optimized") {
-      addMarkersToMap(orderedParks);
-      addRoutingToMap(orderedParks);
-    } else if (selectedValue === "unordered") {
-      addMarkersToMap(unorderedParks);
-      addRoutingToMap(unorderedParks);
-    }
-  });

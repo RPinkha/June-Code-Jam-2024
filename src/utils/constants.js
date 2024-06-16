@@ -8,6 +8,20 @@ export const navButtonBottomLine = header.querySelector(
 );
 export const navLinks = header.querySelector(".nav__links");
 
+const routeCaption = document.querySelector(".route__caption");
+export const routeCaptionOptimized = document.querySelector(
+  ".route__caption_data_optimized"
+);
+export const routeCaptionUnoptimized = document.querySelector(
+  ".route__caption_data_unoptimized"
+);
+export const routeCaptionDifference = document.querySelector(
+  ".route__caption_data_difference"
+);
+export const routeCaptionEfficiency = document.querySelector(
+  ".route__caption_data_efficiency"
+);
+
 export const footerYear = document.querySelector(".footer__year");
 
 export const thankYou = document.querySelector(".suggest__thankyou");
@@ -23,3 +37,11 @@ const parksForBaselineOrder = [...data.parks];
 export const unorderedParks = parksForBaselineOrder.sort(
   (a, b) => a.baseline_order - b.baseline_order
 );
+
+export const optimizedDistance = data.optimizedDistance;
+export const unoptimizedDistance = data.unoptimizedDistance;
+export const distanceDifference = unoptimizedDistance - optimizedDistance;
+export const distanceEfficiency = (
+  (distanceDifference * 100) /
+  unoptimizedDistance
+).toFixed(2);
