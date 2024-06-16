@@ -234,10 +234,11 @@ Despite the quick turnaround, significant effort was dedicated to this project. 
 - Further Analysis: Conduct a comparative analysis of visitor data across different years. Create an NLP component to compare similar keywords in descriptions, enabling users to choose locations based on description similarities or interests.
 
 **Software Engineering Enhancements:**
-- Carousel of Park Cards: Create a carousel feature displaying cards for each park with descriptions and pictures for user engagement.
-- Map Features: Add the unoptimized map, and showing park locations with toggle options. Include flexible starting point and dynamic stop management.
-- Real-time Updates: Integrate real-time weather updates for each park. Integrate a feature that estimates gas prices for planned routes based on current fuel prices and vehicle fuel efficiency.
-- Invite Friends Feature and Customizeable Itineraries: Develop a feature to invite friends, allowing users to share routes and favorite parks. Allow users to create and save customizable itineraries, enhancing trip planning, personalization, and promoting social interaction.
+
+- Carousel of Park Cards: Create a block with cards for each of the locations in the JSON file. Each card would feature a separate park. On click, it would open a modal displaying the image, name, and description of the location, all taken from the JSON.
+- Map Features: Add the unoptimized map from the notebook, showing park locations with toggle options. Include flexible starting point and dynamic stop management.
+- Real-time Updates: Integrate real-time weather updates for each park based on time. Integrate a feature that estimates gas prices for planned routes based on current fuel prices and vehicle fuel efficiency.
+- Invite Friends Feature and Customizeable Itineraries: Develop a feature to invite friends, allowing users to share routes and favorite parks. Allow users to create and save customizable itineraries for trip planning and social interaction.
 
 ### Members:
 
