@@ -8,7 +8,6 @@ import {
   navLinks,
   thankYou,
 } from "../utils/constants.js";
-import data from "../data/parks_data.json";
 
 footerYear.textContent = currentYear;
 navButton.addEventListener("click", () => {
