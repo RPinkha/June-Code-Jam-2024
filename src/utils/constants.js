@@ -9,16 +9,16 @@ export const navButtonBottomLine = header.querySelector(
 export const navLinks = header.querySelector(".nav__links");
 
 const routeCaption = document.querySelector(".route__caption");
-export const routeCaptionOptimized = document.querySelector(
+export const routeCaptionOptimized = routeCaption.querySelector(
   ".route__caption_data_optimized"
 );
-export const routeCaptionUnoptimized = document.querySelector(
+export const routeCaptionUnoptimized = routeCaption.querySelector(
   ".route__caption_data_unoptimized"
 );
-export const routeCaptionDifference = document.querySelector(
+export const routeCaptionDifference = routeCaption.querySelector(
   ".route__caption_data_difference"
 );
-export const routeCaptionEfficiency = document.querySelector(
+export const routeCaptionEfficiency = routeCaption.querySelector(
   ".route__caption_data_efficiency"
 );
 
