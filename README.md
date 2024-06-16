@@ -1,5 +1,6 @@
 ### June 2024 Code Jam - Park Sparks
-![Alt Text](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/parksparks.png)
+
+![Alt Text](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/src/images/parkscene.png)
 
 # Park Sparks : Optimal National Park Route
 
@@ -8,32 +9,37 @@
 Park Sparks provides the optimal route to the most popular national parks, providing travlerers with the shortest and most efficient pathway for their summer adventure. Using advanced algorithms for geospatial analysis, data visualizations, and a user-friendly webpage, we ensure that you reach your destination quickly. Discover the most efficient and scenic route through America's natural treasures with Park Sparks!
 
 ## Design Structure
-[Park Sparks](URL)
 
-[Figma](URL)
-[](URL)
+[Figma](https://www.figma.com/design/odS8gABIYRzmXa7qBRb6eZ/JuneCodeJam%3A-ParkSparks?node-id=0-1&t=ZZvKbD4ke9s1d3nE-1)
+
+[Our live project](https://rpinkha.github.io/June-Code-Jam-2024/)
 
 ## Key Technologies
--
--
--
+
+- HTML and CSS
+- JavaScript and Node.js.
+- Webpack and Babel
+- Leaflet Library
+- Deployed on gh-pages
 
 ## Setup Instructions
 
-Follow these steps to set up the project locally:
+Follow these steps if you need to set up the project locally:
 
 **Clone the Repository**
-  ```bash
-  git clone https://github.com/RPinkha/June-Code-Jam-2024.git
-  cd June-Code-Jam-2024
-  npm install
-  npm run dev
-  ```
-Install requirments.txt to run .py and .ipynb files locally: 
 
-  ```bash
-  pip install -r requirements.txt
-  ```
+```bash
+git clone https://github.com/RPinkha/June-Code-Jam-2024.git
+cd June-Code-Jam-2024
+npm install
+npm run dev
+```
+
+Install requirments.txt to run .py and .ipynb files locally:
+
+```bash
+pip install -r requirements.txt
+```
 
 ### Export Data to JSON
 
@@ -50,37 +56,41 @@ Next, from the root folder, cd into cd src/scripts/ and run `python export_data_
 This should update the existing JSON file in /data/parks_data.json. This JSON file is now ready to use as a JavaScript import, etc.
 
 ## Data Project
+
 **1. Data Collection and Selection:**
+
 - Top 9 national parks were selected based on their high visitor counts in 2021.
 - Relevant data such as park names, recreation visitors, locations, areas, and descriptions were collected and organized.
 
 **2. Route Optimization:**
+
 - Utilized geographical coordinates (longitude and latitude) of the selected parks to plan optimal routes.
 - Selected the most popular ordered park route model, and the optimal route model
 
 **3. Data Integration and Analysis:**
+
 - Merged datasets including park information and location coordinates to facilitate comprehensive route mapping.
 - Employed statistical analysis and data visualization techniques to present findings effectively.
 
 ### Datasets used:
 
-**nationparks.csv** - "The United States National Parks" - includes Name, Visitors, Date Established, Description and Area. 
+**nationparks.csv** - "The United States National Parks" - includes Name, Visitors, Date Established, Description and Area.
 
-https://www.kaggle.com/datasets/thedevastator/the-united-states-national-parks 
+https://www.kaggle.com/datasets/thedevastator/the-united-states-national-parks
 
-**us-national-parks.json** - "us-national-parks" - includes Longitutde, Latitude, park info and descripton. 
+**us-national-parks.json** - "us-national-parks" - includes Longitutde, Latitude, park info and descripton.
 
 https://data.world/kevinnayar/us-national-parks
 
 **final_9parks.csv** - Final cleaned .csv for [download](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/final_9parks.csv) and use in the project.
 
-- *name*: Name of National Park
-- *visitors*: Number of annual visitors for 2021
-- *description*: Provided description of the park
-- *date_established*:
-- *longitude*: Longitude coordinate of the park
-- *latitude*: Latitude coordinate of the park
-- *area_km2*: Total area of the park in square kilometers
+- _name_: Name of National Park
+- _visitors_: Number of annual visitors for 2021
+- _description_: Provided description of the park
+- _date_established_:
+- _longitude_: Longitude coordinate of the park
+- _latitude_: Latitude coordinate of the park
+- _area_km2_: Total area of the park in square kilometers
 
 The datasets were merged to conatin the above information for 63 national parks in the Unites States.The data underwent an initial preprocessing stage as part of an exploratory data analysis (EDA), during which they were carefully parsed, relabeled, and sorted. Additionally, corrections were made to ensure consistency in type and format.
 
@@ -88,17 +98,17 @@ Using the data, we found the 9 top most vistied parks, and from there plan out a
 
 ## Top 9 National Parks:
 
-|  # | Name                  | Visitors  | Date Established | Longitude | Latitude | Area km² |
-|----|-----------------------|-----------|------------------|-----------|----------|----------|
-|  0 | Great Smoky Mountains | 14161548  | 1934-06-15       | -83.53    | 35.68    | 2114.2   |
-|  1 | Zion                  | 5039835   | 1919-11-19       | -113.05   | 37.30    | 595.9    |
-|  2 | Yellowstone           | 4860242   | 1872-03-01       | -110.50   | 44.60    | 8983.2   |
-|  3 | Grand Canyon          | 4532677   | 1919-02-26       | -112.14   | 36.06    | 4862.9   |
-|  4 | Rocky Mountain        | 4434848   | 1915-01-26       | -105.58   | 40.40    | 1075.7   |
-|  5 | Acadia                | 4069098   | 1919-02-26       | -68.21    | 44.35    | 198.6    |
-|  6 | Grand Teton           | 3885230   | 1929-02-26       | -110.80   | 43.73    | 1254.7   |
-|  7 | Yosemite              | 3287595   | 1890-10-01       | -119.50   | 37.83    | 3082.7   |
-|  8 | Glacier               | 3081656   | 1910-05-11       | -114.00   | 48.80    | 4100.0   |
+| #   | Name                  | Visitors | Date Established | Longitude | Latitude | Area km² |
+| --- | --------------------- | -------- | ---------------- | --------- | -------- | -------- |
+| 0   | Great Smoky Mountains | 14161548 | 1934-06-15       | -83.53    | 35.68    | 2114.2   |
+| 1   | Zion                  | 5039835  | 1919-11-19       | -113.05   | 37.30    | 595.9    |
+| 2   | Yellowstone           | 4860242  | 1872-03-01       | -110.50   | 44.60    | 8983.2   |
+| 3   | Grand Canyon          | 4532677  | 1919-02-26       | -112.14   | 36.06    | 4862.9   |
+| 4   | Rocky Mountain        | 4434848  | 1915-01-26       | -105.58   | 40.40    | 1075.7   |
+| 5   | Acadia                | 4069098  | 1919-02-26       | -68.21    | 44.35    | 198.6    |
+| 6   | Grand Teton           | 3885230  | 1929-02-26       | -110.80   | 43.73    | 1254.7   |
+| 7   | Yosemite              | 3287595  | 1890-10-01       | -119.50   | 37.83    | 3082.7   |
+| 8   | Glacier               | 3081656  | 1910-05-11       | -114.00   | 48.80    | 4100.0   |
 
 See Nation Park text descriptions [here](URL)
 <img src="https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/top9parks.png" alt="Top 9 Parks" style="width:800px;"/>
@@ -123,7 +133,6 @@ The Haversine formula is useful for calculating the great-circle distance betwee
 
 **OSRM (Open Source Routing Machine) API**
 OSRM is used to calculate realistic driving routes based on road networks, considering actual driving conditions, road restrictions, and traffic data. Essential for detailed travel planning and navigation, ensuring that the routes are practical and follow real-world constraints.
-    
 
 **Traveling Salesman Problem (TSP) Solved with OR-Tools**
 The TSP finds the shortest possible route that visits each location exactly once and returns to the origin point. This is particularly useful for optimizing travel routes to minimize distance or time. Utilized for optimal route planning in various scenarios such as logistics, delivery services, and efficient trip planning.
@@ -131,6 +140,7 @@ The TSP finds the shortest possible route that visits each location exactly once
 ## Route Models
 
 ## Most-Visited Ordering Route Model:
+
 ![Most Visited Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/most_visitied_route.png)
 
 ### Most-Visited Ordering Route Model Results:
@@ -154,9 +164,10 @@ Yosemite to Glacier: 1066.51 miles
 **Total Distance: 11121.51 miles**
 
 ## Optimzed Route Model:
+
 For optimal route planning, the **Traveling Salesman Problem (TSP)** is solved. A one-way trip scenario, where the route spans from a starting point to a destination without returning to the origin.This problem finds the shortest route visiting each location exactly once, applicable to various real-world scenarios such as delivery services and supply chain management for efficient routing.
 
-To optimize the route, a **distance matrix** is crucial. This matrix calculates pairwise distances between geographic points, represented by latitude and longitude coordinates. Each element in the matrix denotes the distance between two locations, adding efficient route planning by providing insights into travel distances and optimal sequencing of stops. 
+To optimize the route, a **distance matrix** is crucial. This matrix calculates pairwise distances between geographic points, represented by latitude and longitude coordinates. Each element in the matrix denotes the distance between two locations, adding efficient route planning by providing insights into travel distances and optimal sequencing of stops.
 
 ![Optimal Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/optimal_route.png)
 
@@ -183,18 +194,22 @@ Grand Canyon to Rocky Mountain: 465.25 miles
 ## Route Conclusions:
 
 **First route model:**
-* Total distance: **11,121.51 miles**
+
+- Total distance: **11,121.51 miles**
 
 **Optimal route model:**
-* Total distance: **5,094.52 miles**
+
+- Total distance: **5,094.52 miles**
 
 **Summary:**
-* Total distance reduction: **6,026.99 miles**
-* Percentage reduction in distance: **54.19%**
+
+- Total distance reduction: **6,026.99 miles**
+- Percentage reduction in distance: **54.19%**
 
 The optimized route model significantly improves efficiency by reducing the total distance traveled by **54.19%**, saving **6,026.99** miles compared to the first route model. This demonstrates the effectiveness of the route optimization.
 
 ## Conclusion
+
 The optimized route highlights improvements in travel efficiency. By analyzing and restructuring the travel itinerary, the optimized route achieves a significant reduction in the total distance covered, directly translating to potential savings in travel time, fuel costs, and overall trip expenses.
 
 The first route, covering 11,121.51 miles, illustrates the extensive journey required when following a non-optimized path. In contrast, **the optimized route reduces the travel distance to 5,094.52 miles**, **By reducing the total travel distance by over 50%**.
@@ -206,7 +221,6 @@ Implicit outcomes include:
 - **Enhanced Travel Experience:** Shorter travel distances allow more time to be spent enjoying the destinations rather than on the road, enhancing the overall travel experience.
 
 This optimization not only achieves the primary goal of route efficiency but also provides a comprehensive approach to more sustainable and enjoyable travel. It underscores the value of optimization techniques in achieving practical and impactful results.
-
 
 ### Members:
 
