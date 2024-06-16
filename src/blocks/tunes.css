@@ -1,40 +1,68 @@
 .tunes {
-  display: flex;
-  flex-direction: column;
   position: relative;
   justify-content: center;
   align-items: center;
-  background-color: #e78895;
+  background-color: #88b29e;
   margin: 0px;
   padding: 0px;
   overflow: hidden;
 }
 
 .tunes__container {
-  display: flex;
-  position: relative;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 20px;
   justify-content: center;
+  justify-items: flex-start;
   align-items: center;
-  margin: 100px 10px;
+  margin: 100px 25px;
+}
+.tunes__info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 50px;
 }
 
 .tunes__title {
   font-family: "Times New Romans", serif;
-  font-size: 3rem;
-  text-align: center;
+  font-size: 40px;
+  text-align: left;
   color: #0c1821;
   margin: 0px;
-  margin-bottom: 25px;
+  z-index: 1;
+}
+.tunes__description {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: #0c1821;
+  margin: 20px 0px;
+  z-index: 1;
+}
+.tunes__videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.tunes__video {
+  position: relative;
+  max-width: 100%;
+  width: 560px;
+  height: 315px;
   z-index: 1;
 }
 
 .tunes__circle-big {
   position: absolute;
-  top: -50px;
-  left: 200px;
-  width: 400px;
-  height: 400px;
+  top: -200px;
+  left: -30px;
+  width: 500px;
+  height: 500px;
   background-color: #f5f5f7;
   border-radius: 50%;
   margin: 0px;
@@ -63,37 +91,23 @@
   z-index: 0;
   transform: rotate(-10deg);
 }
-
-.tunes__description {
-  font-family: "Inter", sans-serif;
-  font-size: 1.2rem;
-  text-align: center;
-  color: #0c1821;
-  margin: 0px;
-  margin-bottom: 35px;
-  z-index: 1;
-}
-
-.tunes__videos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-}
-
-.tunes__video {
-  position: relative;
-  max-width: 100%;
-  width: 560px;
-  height: 315px;
-  z-index: 1;
-}
-
-@media (max-width: 700px) {
-  .suggest__title {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+@media (max-width: 800px) {
+  .tunes__container {
+    justify-items: center;
+    align-items: center;
+    margin: 30px 15px 50px;
+  }
+  .tunes__info {
+    margin-bottom: 15px;
+  }
+  .tunes__title {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  .tunes__description {
+    font-size: 0.7em;
+    text-align: center;
+    margin: 15px 0px 0px;
   }
 
   .tunes__videos {
@@ -105,14 +119,11 @@
     width: 280px;
     height: 157.5px;
   }
-
-  .tunes__title {
-    font-size: 1.75rem;
-    margin-bottom: 15px;
+  .tunes__arrow {
+    visibility: hidden;
   }
-
-  .tunes__description {
-    font-size: 0.7em;
-    margin-bottom: 25px;
+  .tunes__circle-big {
+    width: 400px;
+    height: 400px;
   }
 }
