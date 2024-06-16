@@ -43,7 +43,7 @@ If the final parks dataset ever needs to be changed, run the cell in the .ipynb 
 top_9_parks.to_csv('final_9parks.csv', index=False)
 ```
 
-This will write an updated final_9parks.csv file to /notebooks.
+This will write an updated final_9parks.csv file to /notebook.
 
 Next, from the root folder, cd into cd src/scripts/ and run `python export_data_to_json.py` to write an updated JSON file to /data.
 
@@ -72,7 +72,7 @@ https://www.kaggle.com/datasets/thedevastator/the-united-states-national-parks
 
 https://data.world/kevinnayar/us-national-parks
 
-**final_9parks.csv** - Final cleaned .csv for [download](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/src/notebooks/final_9parks.csv) and use in the project.
+**final_9parks.csv** - Final cleaned .csv for [download](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/final_9parks.csv) and use in the project.
 
 - *name*: Name of National Park
 - *visitors*: Number of annual visitors for 2021
