@@ -14,7 +14,7 @@ Park Sparks provides the optimal route to the most popular national parks, provi
 
 ## Webpage
 
-[Our Live Project](https://rpinkha.github.io/June-Code-Jam-2024/)
+[Park Sparks: Our Live Project](https://rpinkha.github.io/June-Code-Jam-2024/)
 
 ## Key Technologies
 
