@@ -142,3 +142,10 @@
     url("./fonts/Inter-BlackItalic.ttf") format("ttf"),
     url("./fonts/Inter-BlackItalic.otf") format("otf");
 }
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("./fonts/EBGaramond-Bold.woff") format("woff");
+}
