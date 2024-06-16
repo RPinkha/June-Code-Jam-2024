@@ -10,7 +10,7 @@
   max-width: 100%;
   overflow: hidden;
   margin: 0px;
-  padding: 100px 10px 10px;
+  padding: 100px 10px 0px;
 }
 
 .about__container {
@@ -41,7 +41,9 @@
 .about__slogan {
   margin: 0px;
   padding: 0px;
-  font-family: "Times New Roman", serif;
+  font-family: "EB Garamond", serif;
+  font-style: normal;
+  font-weight: 900;
   font-size: 64px;
   text-align: left;
   color: #f5f5f7;
@@ -82,28 +84,39 @@
   border-radius: 50%;
   font-family: "Inter", sans-serif;
   font-size: 40px;
-  border: none;
+  border: 15px solid #355847;
   font-weight: 500;
   color: #0c1821;
   text-decoration: none;
   text-align: center;
   margin: 0px;
+  transition: background-color 0.3s ease;
+  transition: border 0.75s linear;
 }
 
 .about__locator:hover {
   background-color: #e78895;
+  border: 5px solid #f5f5f7;
   cursor: pointer;
   color: #f5f5f7;
   text-decoration: none;
 }
 
 @media (max-width: 800px) {
-  .about {
+    .about {
     padding-top: 80px;
   }
 
+  .about__container {
+    margin-top: 0px;
+  }
+  
+  .about__description {
+    margin-bottom: 0px;
+  }
+  
   .about__arrow {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 50px;
   }
 }

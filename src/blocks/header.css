@@ -19,6 +19,7 @@
 
 .header__anchor {
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 .header__title {
