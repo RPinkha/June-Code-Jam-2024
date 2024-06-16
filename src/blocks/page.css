@@ -7,6 +7,10 @@
   background-color: #355847;
 }
 
+.map {
+  height: 100vh;
+}
+
 @media (max-width: 800px) {
   .page__break {
     margin-top: 70px;
