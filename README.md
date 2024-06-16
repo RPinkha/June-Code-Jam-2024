@@ -132,13 +132,13 @@ Above is a bubble map of the top national parks on a map of the US, where the si
 Below are conclusions based on the different routing strategies and distance calculation techniques used:
 
 **Haversine Distance Calculation**
-The Haversine formula is useful for calculating the great-circle distance between two points on the Earth's surface, which is an approximation of the shortest distance over the Earth's surface. Ideal for quick distance estimations and initial route planning when exact road distances are not required.
+The Haversine formula is used for calculating the great-circle distance between two points on the Earth's surface, which is an approximation of the shortest distance over the Earth's surface. It was utilized for distance estimations and initial route planning without exact road distances.
 
 **OSRM (Open Source Routing Machine) API**
-OSRM is used to calculate realistic driving routes based on road networks, considering actual driving conditions, road restrictions, and traffic data. Essential for detailed travel planning and navigation, ensuring that the routes are practical and follow real-world constraints.
+OSRM is used to calculate realistic driving routes based on road networks, considering actual driving conditions, road restrictions, and sometimes traffic data. It was essential for detailed travel planning and navigation, ensuring that the routes were practical and followed real-world constraints.
 
 **Traveling Salesman Problem (TSP) Solved with OR-Tools**
-The TSP finds the shortest possible route that visits each location exactly once and returns to the origin point. This is particularly useful for optimizing travel routes to minimize distance or time. Utilized for optimal route planning in various scenarios such as logistics, delivery services, and efficient trip planning.
+OR-Tools is used to solve the TSP, finding the shortest possible route that visits each location exactly once. This was useful for optimizing travel routes to minimize distance.
 
 ## Route Models
 
@@ -168,9 +168,9 @@ Yosemite to Glacier: 1066.51 miles
 
 ## Optimzed Route Model:
 
-For optimal route planning, the **Traveling Salesman Problem (TSP)** is solved. A one-way trip scenario, where the route spans from a starting point to a destination without returning to the origin.This problem finds the shortest route visiting each location exactly once, applicable to various real-world scenarios such as delivery services and supply chain management for efficient routing.
+For optimal route planning, the **Traveling Salesman Problem (TSP)** is solved. A one-way trip scenario, where the route spans from a starting point to a destination without returning to the origin. This problem finds the shortest route to see all locations once.
 
-To optimize the route, a **distance matrix** is crucial. This matrix calculates pairwise distances between geographic points, represented by latitude and longitude coordinates. Each element in the matrix denotes the distance between two locations, adding efficient route planning by providing insights into travel distances and optimal sequencing of stops.
+To optimize the route, a **distance matrix** is crucial. This matrix calculates pairwise distances between geographic points, represented by latitude and longitude coordinates. Each element in the matrix denotes the distance between two locations with optimal sequencing of stops.
 
 ![Optimal Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/optimal_route.png)
 
