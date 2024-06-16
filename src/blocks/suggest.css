@@ -28,7 +28,7 @@
 }
 .suggest__title {
   font-family: "Inter", sans-serif;
-  font-size: 2.2rem;
+  font-size: 32px;
   text-align: center;
   color: #0c1821;
   margin: 0px;
@@ -37,6 +37,7 @@
 .suggest__label {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
+  text-align: left;
   color: #0c1821;
   margin: 0px 8px 8px 0px;
   padding: 0px;
@@ -44,6 +45,7 @@
 .suggest__input {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
+  text-align: left;
   color: #0c1821;
   margin: 0px;
   padding: 20px;
@@ -60,6 +62,7 @@
 .suggest__error {
   font-family: "Inter", sans-serif;
   font-size: 0.85rem;
+  text-align: left;
   color: #e78895;
   height: 25px;
   max-width: 450px;
@@ -73,6 +76,7 @@
 .suggest__submit-button {
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
+  text-align: center;
   background-color: #88b29e;
   color: #f5f5f7;
   margin: 0px;
@@ -99,7 +103,8 @@
   background-color: #f5f5f7;
   margin-bottom: 50px;
   border-radius: 10px;
-  padding: 10px 20px;
+
+  z-index: 1;
 }
 .suggest__thankyou_show {
   visibility: visible;
@@ -107,8 +112,11 @@
 .suggest__thankyou-message {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
+  text-align: center;
   color: #0c1821;
   margin: 0px;
+  padding: 20px 20px;
+  z-index: 1;
 }
 .suggest__circle-big {
   position: absolute;
@@ -176,6 +184,9 @@
   .suggest__thankyou-message {
     font-size: 0.75rem;
   }
+  .suggest__arrow {
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 700px) {
@@ -186,5 +197,8 @@
   .suggest__title {
     font-size: 1.2rem;
     margin-bottom: 20px;
+  }
+  .suggest__arrow {
+    visibility: hidden;
   }
 }

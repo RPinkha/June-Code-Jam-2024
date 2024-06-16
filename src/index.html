@@ -58,22 +58,23 @@
         <!--about section-->
         <section class="about" id="page-about">
           <div class="about__container">
-            <h2 class="about__slogan">Spark a New Adventure.</h2>
-            <p class="about__description">
-              Find the the perfect National Park route for the best roadtrip
-              experience!
-            </p>
-            <img
-              class="about__arrow"
-              src="<%=require('./images/ArrowThick.svg')%>"
-              alt="about arrow"
-            />
+            <div class="about__info">
+              <h2 class="about__slogan">Spark a New Adventure.</h2>
+              <p class="about__description">
+                Find the the perfect National Park route for the best roadtrip
+                experience!
+              </p>
+              <img
+                class="about__arrow"
+                src="<%=require('./images/ArrowThick.svg')%>"
+                alt="about arrow"
+              />
+            </div>
+            <a class="about__locator" href="#page-route"> Start My Route</a>
           </div>
-          <a class="about__locator" href="#page-route"> Start My Route</a>
         </section>
         <!--Tunes section-->
         <section class="tunes" id="page-tunes">
-          <div class="tunes__circle-big"></div>
           <div class="tunes__circle-small"></div>
           <img
             class="tunes__arrow"
@@ -81,10 +82,14 @@
             alt="about arrow"
           />
           <div class="tunes__container">
-            <h2 class="tunes__title">Tunes for the Road</h2>
-            <p class="tunes__description">
-              Jam along to some music as you hit the road.
-            </p>
+            <div class="tunes__info">
+              <div class="tunes__circle-big"></div>
+              <h2 class="tunes__title">Tunes for the Road</h2>
+              <p class="tunes__description">
+                Jam along to some music as you hit the road.
+              </p>
+            </div>
+
             <div class="tunes__videos">
               <iframe
                 class="tunes__video"
