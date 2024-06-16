@@ -1,6 +1,6 @@
 ### June 2024 Code Jam - Park Sparks
 
-![Alt Text](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/parksparks.png)
+![Alt Text](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/assets/parksparks.png)
 
 # Park Sparks : Optimal National Park Route
 
@@ -143,7 +143,7 @@ The TSP finds the shortest possible route that visits each location exactly once
 
 ## Most-Visited Ordering Route Model:
 
-![Most Visited Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/most_visitied_route.png)
+![Most Visited Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/assets/most_visitied_route.png)
 
 ### Most-Visited Ordering Route Model Results:
 
@@ -171,7 +171,7 @@ For optimal route planning, the **Traveling Salesman Problem (TSP)** is solved. 
 
 To optimize the route, a **distance matrix** is crucial. This matrix calculates pairwise distances between geographic points, represented by latitude and longitude coordinates. Each element in the matrix denotes the distance between two locations, adding efficient route planning by providing insights into travel distances and optimal sequencing of stops.
 
-![Optimal Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/graphs/optimal_route.png)
+![Optimal Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/assets/optimal_route.png)
 
 ### Optimized Route Results:
 
