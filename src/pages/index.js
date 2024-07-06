@@ -10,10 +10,24 @@ import {
   thankYou,
   orderedParks,
   unorderedParks,
+  optimizedDistance,
+  unoptimizedDistance,
+  distanceDifference,
+  distanceEfficiency,
+  routeCaptionOptimized,
+  routeCaptionUnoptimized,
+  routeCaptionDifference,
+  routeCaptionEfficiency,
 } from "../utils/constants.js";
 
 //footer year updates automatically every year
 footerYear.textContent = currentYear;
+
+//data for the map caption
+routeCaptionOptimized.textContent = optimizedDistance + "-mile";
+routeCaptionUnoptimized.textContent = unoptimizedDistance + "-mile";
+routeCaptionDifference.textContent = distanceDifference + "-mile";
+routeCaptionEfficiency.textContent = distanceEfficiency + "%";
 
 //navButton mobile view interactiveity
 navButton.addEventListener("click", () => {
@@ -28,7 +42,7 @@ function removeThankYou() {
 }
 const submitSuggestion = function () {
   thankYou.classList.add("suggest__thankyou_show");
-  setTimeout(removeThankYou, 30000);
+  setTimeout(removeThankYou, 15000);
 };
 document.addEventListener("submit", (evt) => {
   evt.preventDefault();
@@ -37,26 +51,46 @@ document.addEventListener("submit", (evt) => {
 
 const map = L.map("map").setView([39.8283, -98.5795], 4);
 
-const redCircleIcon = L.divIcon({
-  className: "custom-marker-icon",
-  html: '<div style="background-color: red; width: 12px; height: 12px; border-radius: 50%;"></div>',
-});
-
-// Add a tile layer to the map (OpenStreetMap tiles)
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "&copy; OpenStreetMap contributors",
 }).addTo(map);
 
-// Add markers and collect the coordinates
-const parkCoordinates = orderedParks.map((park) => {
-  L.marker([park.latitude, park.longitude], { icon: redCircleIcon })
-    .addTo(map)
-    .bindPopup(`<b>${park.name}</b>`);
-  return [park.latitude, park.longitude];
-});
+function addMarkersToMap(parks) {
+  parks.forEach((park) => {
+    L.marker([park.latitude, park.longitude], {
+      icon: L.icon({
+        iconUrl:
+          "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png",
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+      }),
+    })
+      .addTo(map)
+      .bindPopup(park.name);
+  });
+}
 
-// Draw lines between the parks
-const polyline = L.polyline(parkCoordinates, { color: "blue" }).addTo(map);
+function addRoutingToMap(parks) {
+  map.eachLayer((layer) => {
+    if (layer instanceof L.Routing.Control) {
+      map.removeLayer(layer);
+    }
+  });
 
-// Fit the map to the polyline bounds
-map.fitBounds(polyline.getBounds());
+  const waypoints = parks.map((park) =>
+    L.latLng(park.latitude, park.longitude)
+  );
+
+  L.Routing.control({
+    waypoints: waypoints,
+    createMarker: () => {
+      return null;
+    },
+    routeWhileDragging: false,
+    addWaypoints: false,
+  }).addTo(map);
+}
+
+addMarkersToMap(orderedParks);
+addRoutingToMap(orderedParks);

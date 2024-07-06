@@ -11,6 +11,25 @@ from ortools.constraint_solver import routing_enums_pb2, pywrapcp
 # Load park location dateset
 top_9_parks = pd.read_csv('../../notebook/final_9parks.csv')
 
+def calculate_route(lat1, lon1, lat2, lon2):
+    url = f"http://router.project-osrm.org/route/v1/driving/{lon1},{lat1};{lon2},{lat2}?overview=full&geometries=geojson"
+    response = requests.get(url)
+    data = response.json()
+    route = data['routes'][0]['geometry']['coordinates']
+    distance = data['routes'][0]['distance'] / 1000 * 0.621371  # meters to miles
+    return route, distance
+
+baseline_total_distance = 0
+
+for i in range(len(top_9_parks) - 1):
+    route, distance = calculate_route(
+        top_9_parks.iloc[i]['latitude'],
+        top_9_parks.iloc[i]['longitude'],
+        top_9_parks.iloc[i + 1]['latitude'],
+        top_9_parks.iloc[i + 1]['longitude']
+    )
+    baseline_total_distance += distance
+
 # Optimized Model: Calculate Distance
 
 # Function to calculate Haversine distance matrix
@@ -77,6 +96,12 @@ optimal_route = solve_tsp_or_tools(distance_matrix)
 if optimal_route and all(idx < len(top_9_parks) for idx in optimal_route):
     optimal_parks = top_9_parks.iloc[optimal_route]
 
+    # Calculate total distance
+    optimized_total_distance = 0
+    for i in range(len(optimal_parks) - 1):
+        distance = distance_matrix[optimal_route[i]][optimal_route[i + 1]]
+        optimized_total_distance += distance
+
 # Prepare parks list
 parks_data = {
     'parks': []
@@ -95,6 +120,12 @@ image_url_dict = {
     'Zion': 'https://www.nps.gov/common/uploads/grid_builder/zion/crop16_9/3F936BF4-1DD8-B71B-0B335232937DB252.jpg'
 }
 
+# Total distances dictionary
+total_distances_dict = {
+    'unoptimizedDistance': round(baseline_total_distance, 2),
+    'optimizedDistance': round(optimized_total_distance, 2)
+}
+
 for i, (idx, park) in enumerate(optimal_parks.iterrows()):
     baseline_order = int(top_9_parks[top_9_parks['name'] == park['name']].index[0])
     
@@ -105,17 +136,20 @@ for i, (idx, park) in enumerate(optimal_parks.iterrows()):
         'latitude': park['latitude'],
         'area_km2': park['area_km2'],
         'image_url': image_url_dict.get(park['name'], ''),
-        'baseline_order': baseline_order,
+        'baseline_order': baseline_order + 1,
         'optimized_order': i + 1
     }
 
     # Append dictionary to list
     parks_data['parks'].append(parks_dict)
 
+# parks_data.update(total_distances_dict)
+merged_data = {**total_distances_dict, **parks_data}
+
 # Sort the dictionary by park name
-parks_data['parks'] = sorted(parks_data['parks'], key=lambda x: x['name'])
+merged_data['parks'] = sorted(merged_data['parks'], key=lambda x: x['name'])
 
 # Write list to JSON file
 with open('../data/parks_data.json', 'w') as json_file:
-    json.dump(parks_data, json_file, indent=2)
+    json.dump(merged_data, json_file, indent=2)
     print('Data has been written to /data/parks_data.json')
