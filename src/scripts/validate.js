@@ -10,6 +10,7 @@ const config = {
   input: ".suggest__input",
   submitButton: ".suggest__submit-button",
   errorClass: "suggest__error_show",
+  inputInvalidClass: "suggest__input_invalid",
 };
 //make universal functions for buttons
 const disableButton = function (button) {
@@ -19,15 +20,18 @@ const enableButton = function (button) {
   button.disabled = false;
 };
 //function to show error
-const showError = function (form, input, { errorClass }) {
+const showError = function (form, input, { errorClass, inputInvalidClass }) {
   const errorMessage = form.querySelector(`#${input.id}-error`);
   errorMessage.classList.add(errorClass);
+  input.classList.add(inputInvalidClass);
+  console.log(input);
   errorMessage.textContent = input.validationMessage;
 };
 //function to hide error
-const hideError = function (form, input, { errorClass }) {
+const hideError = function (form, input, { errorClass, inputInvalidClass }) {
   const errorMessage = form.querySelector(`#${input.id}-error`);
   errorMessage.classList.remove(errorClass);
+  input.classList.remove(inputInvalidClass);
 };
 //function to confirm if input is valid or not
 const confirmInputValid = function (form, input, options) {
