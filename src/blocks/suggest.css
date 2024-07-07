@@ -60,7 +60,7 @@
   outline: none;
 }
 
-.suggest__input:invalid {
+.suggest__input_invalid {
   color: #e78895;
   border-color: #e78895;
 }
