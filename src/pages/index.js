@@ -9,7 +9,6 @@ import {
   navLinks,
   thankYou,
   orderedParks,
-  unorderedParks,
   optimizedDistance,
   unoptimizedDistance,
   distanceDifference,

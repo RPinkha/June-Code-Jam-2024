@@ -1,6 +1,6 @@
 ### June 2024 Code Jam - Park Sparks
 
-![Alt Text](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/assets/parksparks_webpage.png)
+![Park Sparks](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/assets/parksparks_webpage.png)
 
 # Park Sparks : Optimal National Park Route
 
@@ -14,7 +14,7 @@ Park Sparks provides the optimal route to the most popular national parks, provi
 
 ## Webpage
 
-[Our Live Project](https://rpinkha.github.io/June-Code-Jam-2024/)
+[Park Sparks: Our Live Project](https://rpinkha.github.io/June-Code-Jam-2024/)
 
 ## Key Technologies
 
@@ -112,8 +112,9 @@ Using the data, we found the 9 top most vistied parks, and from there plan out a
 | 7   | Yosemite              | 3287595  | 1890-10-01       | -119.50   | 37.83    | 3082.7   |
 | 8   | Glacier               | 3081656  | 1910-05-11       | -114.00   | 48.80    | 4100.0   |
 
-See Nation Park text descriptions [here](URL)
+See Nation Park text descriptions [here](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/assets/Top9Parks_descriptions.txt)
 <img src="https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/assets/top9parks.png" alt="Top 9 Parks" style="width:800px;"/>
+
 This map marks the locations of the top 9 national parks in the United States, chosen by highest visitor count. Providing a straightforward way to visualize the geographic distribution of the parks across the country. The geographic distribution of these top parks shows a concentration in the western United States, reflecting the region's larger wilderness areas.
 
 <img src="https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/assets/date_est.png" alt="Date Established" style="width:800px;"/>
@@ -131,13 +132,13 @@ Above is a bubble map of the top national parks on a map of the US, where the si
 Below are conclusions based on the different routing strategies and distance calculation techniques used:
 
 **Haversine Distance Calculation**
-The Haversine formula is useful for calculating the great-circle distance between two points on the Earth's surface, which is an approximation of the shortest distance over the Earth's surface. Ideal for quick distance estimations and initial route planning when exact road distances are not required.
+The Haversine formula is used for calculating the great-circle distance between two points on the Earth's surface, which is an approximation of the shortest distance over the Earth's surface. It was utilized for distance estimations and initial route planning without exact road distances.
 
 **OSRM (Open Source Routing Machine) API**
-OSRM is used to calculate realistic driving routes based on road networks, considering actual driving conditions, road restrictions, and traffic data. Essential for detailed travel planning and navigation, ensuring that the routes are practical and follow real-world constraints.
+OSRM is used to calculate realistic driving routes based on road networks, considering actual driving conditions, road restrictions, and sometimes traffic data. It was essential for detailed travel planning and navigation, ensuring that the routes were practical and followed real-world constraints.
 
 **Traveling Salesman Problem (TSP) Solved with OR-Tools**
-The TSP finds the shortest possible route that visits each location exactly once and returns to the origin point. This is particularly useful for optimizing travel routes to minimize distance or time. Utilized for optimal route planning in various scenarios such as logistics, delivery services, and efficient trip planning.
+OR-Tools is used to solve the TSP, finding the shortest possible route that visits each location exactly once. This was useful for optimizing travel routes to minimize distance.
 
 ## Route Models
 
@@ -167,9 +168,9 @@ Yosemite to Glacier: 1066.51 miles
 
 ## Optimzed Route Model:
 
-For optimal route planning, the **Traveling Salesman Problem (TSP)** is solved. A one-way trip scenario, where the route spans from a starting point to a destination without returning to the origin.This problem finds the shortest route visiting each location exactly once, applicable to various real-world scenarios such as delivery services and supply chain management for efficient routing.
+For optimal route planning, the **Traveling Salesman Problem (TSP)** is solved. A one-way trip scenario, where the route spans from a starting point to a destination without returning to the origin. This problem finds the shortest route to see all locations once.
 
-To optimize the route, a **distance matrix** is crucial. This matrix calculates pairwise distances between geographic points, represented by latitude and longitude coordinates. Each element in the matrix denotes the distance between two locations, adding efficient route planning by providing insights into travel distances and optimal sequencing of stops.
+To optimize the route, a **distance matrix** is crucial. This matrix calculates pairwise distances between geographic points, represented by latitude and longitude coordinates. Each element in the matrix denotes the distance between two locations with optimal sequencing of stops.
 
 ![Optimal Route](https://github.com/RPinkha/June-Code-Jam-2024/blob/main/notebook/assets/optimal_route.png)
 
@@ -223,6 +224,20 @@ Implicit outcomes include:
 - **Enhanced Travel Experience:** Shorter travel distances allow more time to be spent enjoying the destinations rather than on the road, enhancing the overall travel experience.
 
 This optimization not only achieves the primary goal of route efficiency but also provides a comprehensive approach to more sustainable and enjoyable travel. It underscores the value of optimization techniques in achieving practical and impactful results.
+
+### Prospective Developments and Next Steps
+Despite the quick turnaround, significant effort was dedicated to this project. However, some elements could not be fully explored. Here are some potential improvements:
+
+**Data Science Enhancements:**
+
+- Flexible Starting Point: Implementing a feature that allows users to choose a flexible starting point for route calculations, rather than a fixed starting location. Ability to support support the addition or removal of stops dynamically.
+- Further Analysis: Conduct a comparative analysis of visitor data across different years. Create an NLP component to compare similar keywords in descriptions, enabling users to choose locations based on description similarities or interests.
+
+**Software Engineering Enhancements:**
+
+- Carousel of Park Cards: Create a block with cards for each of the locations in the JSON file. Each card would feature a separate park. On click, it would open a modal displaying the image, name, and description of the location, all taken from the JSON.
+- Map Features: Add the unoptimized map from the notebook, showing park locations with toggle options. Include flexible starting point and dynamic stop management.
+  
 
 ### Members:
 
